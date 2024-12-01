@@ -9,14 +9,14 @@ We provide a clean codebase for end-to-end evaluation of time series anomaly det
 The below figure provides a visual overview of TAB's pipeline.
 
 <div style="text-align: center;">
-    <img src="docs/TAB_pipeline.png" alt="TAB_pipeline" style="zoom:5%;" />
+    <img src="docs/TAB_pipeline.png" alt="TAB_pipeline" style="zoom:8%;" />
 </div>
 
 
 The table below provides a visual overview of how TAB's key features compare to other libraries for time series anomaly detection.
 
 <div style="text-align: center;">
-    <img src="docs/feature.png" alt="TAB_pipeline" style="zoom:15%;" />
+    <img src="docs/feature.png" alt="TAB_pipeline" style="zoom:25%;" />
 </div>
 
 ## Quickstart
