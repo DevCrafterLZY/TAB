@@ -1,0 +1,33 @@
+{
+    "data_config": {
+        "feature_dict": {
+            "if_univariate": true,
+            "if_trend": null,
+            "has_timestamp": null,
+            "if_season": null
+        },
+        "data_set_name": "large_detect"
+    },
+    "model_config": {
+        "models": [],
+        "recommend_model_hyper_params": {
+            "input_chunk_length": 12,
+            "output_chunk_length": 1,
+            "add_relative_index": true
+        }
+    },
+    "evaluation_config": {
+        "metrics": "all",
+        "strategy_args": {
+            "strategy_name": "fixed_detect_score",
+            "train_test_split": 0.1,
+            "seed": 2021
+        }
+    },
+    "report_config": {
+        "aggregate_type": "mean",
+        "report_metrics": ["auc_roc"],
+        "fill_type": "mean_value",
+        "null_value_threshold": "0.3"
+    }
+}
