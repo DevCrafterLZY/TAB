@@ -11,6 +11,7 @@ __all__ = [
 ]
 
 
+
 from ts_benchmark.baselines.self_impl.LOF.lof import LOF
 from ts_benchmark.baselines.self_impl.VAR.VAR import VAR_model
 from ts_benchmark.baselines.self_impl.DCdetector.DCdetector import DCdetector
