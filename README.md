@@ -4,14 +4,20 @@
 
 TAB is an open-source library designed for time series anomaly detection researchers.
 
-We provide a clean codebase for end-to-end evaluation of time series anomaly detection  models, comparing their performance with baseline algorithms under various evaluation strategies and metrics.
+We provide a clean codebase for end-to-end evaluation of time series anomaly detection models, comparing their performance with baseline algorithms under various evaluation strategies and metrics.
 
 The below figure provides a visual overview of TAB's pipeline.
 
 <div style="text-align: center;">
-    <img src="docs/TAB_pipeline.png" alt="TAB_pipeline" style="zoom:90%;" />
+    <img src="docs/TAB_pipeline.png" alt="TAB_pipeline" style="zoom:10%;" />
 </div>
 
+
+The table below provides a visual overview of how TAB's key features compare to other libraries for time series anomaly detection.
+
+<div style="text-align: center;">
+    <img src="docs/feature.png" alt="TAB_pipeline" style="zoom:30%;" />
+</div>
 ## Quickstart
 
 ### Installation
