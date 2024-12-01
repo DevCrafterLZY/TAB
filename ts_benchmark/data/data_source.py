@@ -111,31 +111,31 @@ class LocalDataSource(DataSource):
         """
 
         metadata = self._load_metadata()
-        csv_files = {
-            f
-            for f in os.listdir(self.local_data_path)
-            if f.endswith(".csv") and f != os.path.basename(self.metadata_path)
-        }
-        user_csv_files = set(csv_files).difference(metadata.index)
-        if not user_csv_files:
-            return metadata
-        data_info_list = []
-        for user_csv in user_csv_files:
-            try:
-                data_info_list.append(
-                    load_series_info(os.path.join(self.local_data_path, user_csv))
-                )
-            except Exception as e:
-                raise RuntimeError(f"Error loading series info from {user_csv}: {e}")
-        new_metadata = pd.DataFrame(data_info_list)
-        new_metadata.set_index(self._INDEX_COL, drop=False, inplace=True)
-        metadata = pd.concat([metadata, new_metadata])
-        with open(self.metadata_path, "w", newline="", encoding="utf-8") as csvfile:
-            metadata.to_csv(csvfile, index=False)
-        logger.info(
-            "Detected %s new user datasets, registered in the metadata",
-            len(user_csv_files),
-        )
+        # csv_files = {
+        #     f
+        #     for f in os.listdir(self.local_data_path)
+        #     if f.endswith(".csv") and f != os.path.basename(self.metadata_path)
+        # }
+        # user_csv_files = set(csv_files).difference(metadata.index)
+        # if not user_csv_files:
+        #     return metadata
+        # data_info_list = []
+        # for user_csv in user_csv_files:
+        #     try:
+        #         data_info_list.append(
+        #             load_series_info(os.path.join(self.local_data_path, user_csv))
+        #         )
+        #     except Exception as e:
+        #         raise RuntimeError(f"Error loading series info from {user_csv}: {e}")
+        # new_metadata = pd.DataFrame(data_info_list)
+        # new_metadata.set_index(self._INDEX_COL, drop=False, inplace=True)
+        # metadata = pd.concat([metadata, new_metadata])
+        # with open(self.metadata_path, "w", newline="", encoding="utf-8") as csvfile:
+        #     metadata.to_csv(csvfile, index=False)
+        # logger.info(
+        #     "Detected %s new user datasets, registered in the metadata",
+        #     len(user_csv_files),
+        # )
         return metadata
 
     def load_series_list(self, series_list: List[str]) -> NoReturn:
