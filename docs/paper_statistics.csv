@@ -1,4 +1,4 @@
-paper name,dataset nums,dataset domain nums
+paper name,multivariate dataset nums,multivariate dataset domain nums
 Revisiting VAE for Unsupervised Time Series Anomaly Detection: A Frequency Perspective,2,1
 Breaking the Time-Frequency Granularity Discrepancy in Time-Series Anomaly Detection,3,2
 LARA: A Light and Anti-overfitting Retraining Approach for Unsupervised Time Series Anomaly Detection,3,2
