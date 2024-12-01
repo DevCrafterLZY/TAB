@@ -32,14 +32,14 @@ sudo apt-get install git
 Download the environment from [OneDrive](https://1drv.ms/u/c/801ce36c4ff3f93b/Eapc8wI7tqxOqmOPZ66uMG4BgeX8j7AewKq7NekCI0Al2w?e=NdenlL). (This may take some time, please wait patiently.) Then, create a directory my_env (we recommend creating it under `conda/envs/`) and extract the environment into this directory:
 ```shell
 mkdir -p my_env
-tar -xzf CATCH.tar.gz -C my_env
+tar -xzf TAB.tar.gz -C my_env
 ```
 #### 3. Activate the Environment
 ```shell
 source my_env/bin/activate
 ```
 #### 4. Clean Environment Prefix
-You can clear the environment prefix using the following command. Now the environment is the same as one created directly with conda at this path:
+You can clear the environment prefix using the following command. Now the environment is the same as one created directly with conda at this path.
 ```shell
 (my_env) $ conda-unpack
 ```
