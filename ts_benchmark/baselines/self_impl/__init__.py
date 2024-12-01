@@ -18,4 +18,6 @@ from ts_benchmark.baselines.self_impl.ModernTCN.ModernTCN import ModernTCN
 from ts_benchmark.baselines.self_impl.CATCH.CATCH import CATCH
 from ts_benchmark.baselines.self_impl.DualTF.DualTF import DualTF
 from ts_benchmark.baselines.self_impl.TFAD.TFAD import TFAD
+from ts_benchmark.baselines.self_impl.MatrixProfile.MatrixProfile import MatrixProfile
+from ts_benchmark.baselines.self_impl.TranAD.TranAD import TranAD
 
