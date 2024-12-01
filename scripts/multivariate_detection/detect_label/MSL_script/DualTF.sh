@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --data-name-list "MSL.csv" --model-name "self_impl.DualTF" --model-hyper-params '{"batch_size": 4, "fre_anomaly_ratio": 27, "num_epochs": 3, "seq_len": 100, "anomaly_ratio": 15.0}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/DualTF"
