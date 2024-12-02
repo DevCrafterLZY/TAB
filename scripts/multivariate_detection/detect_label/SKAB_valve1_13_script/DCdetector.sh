@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --data-name-list "SKAB_valve1_13.csv" --model-name "self_impl.DCdetector" --model-hyper-params '{"batch_size": 64, "num_epochs": 3, "patch_size": [3, 5], "win_size": 90, "anomaly_ratio": 0.5}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/DCdetector"
