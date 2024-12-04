@@ -26,7 +26,7 @@ Follow the steps below to configure the TAB environment.
 #### 1. Install Git
 Some models require Git to run. Please ensure that Git is installed on your system. If not, you can install it using the following command:
 ```shell
-sudo apt-get install git
+apt-get install git
 ```
 #### 2. Download and Extract Environment
 Download the environment from [OneDrive](https://1drv.ms/u/c/801ce36c4ff3f93b/Eapc8wI7tqxOqmOPZ66uMG4BgeX8j7AewKq7NekCI0Al2w?e=NdenlL). (This may take some time, please wait patiently.) Then, create a directory my_env (we recommend creating it under `conda/envs/`) and extract the environment into this directory:
@@ -46,11 +46,11 @@ You can clear the environment prefix using the following command. Now the enviro
 
 ### Data preparation
 
-Prepare Data. You can obtained the well pre-processed datasets from [Google Drive](https://drive.google.com/file/d/1oHDHKCGMT_xkHhCI113bQ-4IzGnKPU3I/view?usp=drive_link). Then place the downloaded data under the folder `./dataset`. 
+Prepare Data. You can obtain the well pre-processed datasets from [Google Drive](https://drive.google.com/file/d/193BZapw_ZdWIe5Yu80bObfVzbLDDo-Mj/view). Then place the downloaded data under the folder `./dataset`. 
 
 ### Train and evaluate model
 
-We provide the experiment scripts for all benchmarks under the folder `./scripts/multivariate_detection`, and `./scripts/univariate_detection`. For example you can reproduce a experiment result as the following:
+We provide the experiment scripts for all benchmarks under the folder `./scripts/multivariate_detection`, and `./scripts/univariate_detection`. For example, you can reproduce an experiment result as the following:
 
 ```shell
 sh ./scripts/multivariate_detection/detect_label/MSL_script/ModernTCN.sh
