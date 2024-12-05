@@ -46,7 +46,7 @@ You can clear the environment prefix using the following command. Now the enviro
 
 ### Data preparation
 
-Prepare Data. You can obtain the well pre-processed datasets from [Google Drive](https://drive.google.com/file/d/193BZapw_ZdWIe5Yu80bObfVzbLDDo-Mj/view). Then place the downloaded data under the folder `./dataset`. 
+Prepare Data. You can obtain the well pre-processed datasets from [Google Drive](https://drive.google.com/file/d/1bZNLl5hoo1V4DfqMiPKJxHUGuX9C26WC/view?usp=sharing). Then place the downloaded data under the folder `./dataset`. 
 
 ### Train and evaluate model
 
