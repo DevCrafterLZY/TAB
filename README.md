@@ -29,7 +29,7 @@ Some models require Git to run. Please ensure that Git is installed on your syst
 apt-get install git
 ```
 #### 2. Download and Extract Environment
-Download the environment from [Google Drive](https://drive.google.com/drive/folders/1dW0a82VkgCnTihBHUfiRysocV1d3BJm_?usp=sharing). (This may take some time, please wait patiently.) Then, create a directory my_env (we recommend creating it under `conda/envs/`) and extract the environment into this directory:
+Download the environment from [Google Drive](https://drive.google.com/file/d/1PacXawsWoAVgifapUvFvAK7VnOJgc6FZ/view?usp=drive_link). (This may take some time, please wait patiently.) Then, create a directory my_env (we recommend creating it under `conda/envs/`) and extract the environment into this directory:
 ```shell
 mkdir -p my_env
 tar -xzf tab.tar.gz -C my_env
@@ -49,7 +49,7 @@ You can clear the environment prefix using the following command. Now the enviro
 Prepare Data. You can obtain the well pre-processed datasets from [Google Drive](https://drive.google.com/file/d/1bZNLl5hoo1V4DfqMiPKJxHUGuX9C26WC/view). Then place the downloaded data under the folder `./dataset`. 
 
 ### Checkpoints preparation
-You can obtain the checkpoints from [Google Drive](https://drive.google.com/drive/folders/1dW0a82VkgCnTihBHUfiRysocV1d3BJm_?usp=sharing). Then place the downloaded checkpoints under the folder `ts_benchmark/baselines/LLM/checkpoints` or `TAB/ts_benchmark/baselines/pretrain/checkpoints`.
+You can obtain the checkpoints from [Google Drive](https://drive.google.com/file/d/1fCy0EEfoDTr8UNUYiKIGSmOvBPHzwAR7/view?usp=drive_link). Then place the downloaded checkpoints under the folder `ts_benchmark/baselines/LLM/checkpoints` or `TAB/ts_benchmark/baselines/pretrain/checkpoints`.
 
 ### Train and evaluate model
 
