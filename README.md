@@ -46,7 +46,7 @@ You can clear the environment prefix using the following command. Now the enviro
 
 ### Data preparation
 
-Prepare Data. You can obtain the well pre-processed datasets from [Google Drive](https://drive.google.com/file/d/1bZNLl5hoo1V4DfqMiPKJxHUGuX9C26WC/view). Then place the downloaded data under the folder `./dataset`. 
+Prepare Data. You can obtain the well pre-processed datasets from [Google Drive](https://drive.google.com/file/d/1_aW2AYwXtGk7ArjDjcSazqD0N9zp-zXx/view?usp=sharing). Then place the downloaded data under the folder `./dataset`. 
 
 ### Checkpoints preparation
 You can obtain the checkpoints from [Google Drive](https://drive.google.com/file/d/1fCy0EEfoDTr8UNUYiKIGSmOvBPHzwAR7/view?usp=drive_link). Then place the downloaded checkpoints under the folder `ts_benchmark/baselines/LLM/checkpoints` or `TAB/ts_benchmark/baselines/pretrain/checkpoints`.
