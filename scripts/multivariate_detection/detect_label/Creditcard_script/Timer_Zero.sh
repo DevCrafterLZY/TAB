@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --data-name-list "Creditcard.csv" --model-name "pre_train.TimerModel" --model-hyper-params '{"seq_len": 672}'  --adapter "PreTrain_adapter"  --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/Timer_Zero"

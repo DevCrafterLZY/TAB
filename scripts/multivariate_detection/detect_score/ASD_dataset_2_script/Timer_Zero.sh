@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_multi_config.json" --data-name-list "ASD_dataset_2.csv" --model-name "pre_train.TimerModel" --model-hyper-params '{"seq_len": 672}' --adapter "PreTrain_adapter"  --gpus 0  --num-workers 1  --timeout 60000  --save-path "score/Timer_Zero"

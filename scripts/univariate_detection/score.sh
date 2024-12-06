@@ -52,15 +52,17 @@ python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_config.jso
 
 python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_config.json" --data-set-name "large_detect" --model-name "self_impl.DCdetector" --model-hyper-params '{"batch_size": 64, "num_epochs": 3, "patch_size": [3, 5], "win_size": 30, "anomaly_ratio": 20.0}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "single/score/DCdetector"
 
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_config.json" --data-set-name "large_detect" --model-name "pre_train.UniTS" --model-hyper-params '{"num_epochs": 3, "seq_len": 96, "sampling_rate": 1, "is_train": 1}' --adapter "PreTrain_adapter" --gpus 0  --num-workers 1  --timeout 60000  --save-path "single/score/Units_Full"
 
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_config.json" --data-set-name "large_detect" --model-name "pre_train.TinyTimeMixer" --model-hyper-params '{"num_epochs": 3, "seq_len": 96, "sampling_rate": 1, "is_train": 1}' --adapter "PreTrain_adapter" --gpus 0  --num-workers 1  --timeout 60000  --save-path "single/score/TinyTimeMixer_Full"
 
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_config.json" --data-set-name "large_detect" --model-name "pre_train.TimerModel" --model-hyper-params '{"num_epochs": 3, "seq_len": 96, "sampling_rate": 1, "is_train": 1}' --adapter "PreTrain_adapter" --gpus 0  --num-workers 1  --timeout 60000  --save-path "single/score/TimerModel_Full"
 
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_config.json" --data-set-name "large_detect" --model-name "pre_train.Moment" --model-hyper-params '{"num_epochs": 3, "seq_len": 96, "sampling_rate": 1, "is_train": 1}' --adapter "PreTrain_adapter" --gpus 0  --num-workers 1  --timeout 60000  --save-path "single/score/Moment_Full"
 
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_config.json" --data-set-name "large_detect" --model-name "LLM.UniTimeModel" --model-hyper-params '{"num_epochs": 3, "seq_len": 96, "sampling_rate": 1, "max_token_num": 17, "stride": 16, "patch_size": 16, "dataset": "UV", "max_backcast_len": 96}' --adapter "llm_adapter" --gpus 0  --num-workers 1  --timeout 60000  --save-path "single/score/UniTimeModel_Full"
 
-
-
-
-
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_config.json" --data-set-name "large_detect" --model-name "LLM.GPT4TSModel" --model-hyper-params '{"num_epochs": 3, "seq_len": 100, "sampling_rate": 1}' --adapter "llm_adapter" --gpus 0  --num-workers 1  --timeout 60000  --save-path "single/score/GPT4TS_Full"
 
 
 

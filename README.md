@@ -29,10 +29,10 @@ Some models require Git to run. Please ensure that Git is installed on your syst
 apt-get install git
 ```
 #### 2. Download and Extract Environment
-Download the environment from [OneDrive](https://1drv.ms/u/c/801ce36c4ff3f93b/Eapc8wI7tqxOqmOPZ66uMG4BgeX8j7AewKq7NekCI0Al2w?e=NdenlL). (This may take some time, please wait patiently.) Then, create a directory my_env (we recommend creating it under `conda/envs/`) and extract the environment into this directory:
+Download the environment from [Google Drive](https://drive.google.com/drive/folders/1dW0a82VkgCnTihBHUfiRysocV1d3BJm_?usp=sharing). (This may take some time, please wait patiently.) Then, create a directory my_env (we recommend creating it under `conda/envs/`) and extract the environment into this directory:
 ```shell
 mkdir -p my_env
-tar -xzf TAB.tar.gz -C my_env
+tar -xzf tab.tar.gz -C my_env
 ```
 #### 3. Activate the Environment
 ```shell
@@ -46,7 +46,10 @@ You can clear the environment prefix using the following command. Now the enviro
 
 ### Data preparation
 
-Prepare Data. You can obtain the well pre-processed datasets from [Google Drive](https://drive.google.com/file/d/193BZapw_ZdWIe5Yu80bObfVzbLDDo-Mj/view). Then place the downloaded data under the folder `./dataset`. 
+Prepare Data. You can obtain the well pre-processed datasets from [Google Drive](https://drive.google.com/file/d/1bZNLl5hoo1V4DfqMiPKJxHUGuX9C26WC/view). Then place the downloaded data under the folder `./dataset`. 
+
+### Checkpoints preparation
+Dwonload the checkpoints of foundational models. You can obtain the checkpoints from [Google Drive](https://drive.google.com/drive/folders/1dW0a82VkgCnTihBHUfiRysocV1d3BJm_?usp=sharing). Then place the downloaded checkpoints under the folder `ts_benchmark/baselines/LLM/checkpoints` or `TAB/ts_benchmark/baselines/pretrain/checkpoints`.
 
 ### Train and evaluate model
 

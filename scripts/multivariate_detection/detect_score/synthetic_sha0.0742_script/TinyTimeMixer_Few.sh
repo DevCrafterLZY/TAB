@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_multi_config.json" --data-name-list "synthetic_sha0.0742.csv" --model-name "pre_train.TinyTimeMixer" --model-hyper-params '{"seq_len": 96, "is_train": 1, "sampling_rate": 0.05}'  --adapter "PreTrain_adapter"  --gpus 0  --num-workers 1  --timeout 60000  --save-path "score/TinyTimeMixer_Few"
