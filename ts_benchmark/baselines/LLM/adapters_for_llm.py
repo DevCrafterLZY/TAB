@@ -41,17 +41,18 @@ DEFAULT_LLM_BASED_HYPER_PARAMS = {
     "is_train": 0,
     "get_train": 0,
     "lr": 0.0001,
-    "patch_size": 16,
-    "stride": 8,
-    "kernel_size": 25,
-    "seq_len": 96,
-    "horizon": 96,
 
-    "is_gpt": 1,
+    # "is_gpt": 1, # autotimes
+    # "patch_size": 16,
+    # "kernel_size": 25,
+    # "pretrain": 1,
+    # "seq_len": 96,
+    # "horizon": 96,
+    # "stride": 8,
     "gpt_layers": 3,
     "d_model": 768,
     "freeze":1,
-    "use_multi_gpu": 0, 
+    "use_multi_gpu": 0, # gpt4ts
     "local_rank": 0,
     "mix_embeds": 1,
     "mlp": 0,
@@ -62,11 +63,29 @@ DEFAULT_LLM_BASED_HYPER_PARAMS = {
     "token_len": 96,
     "use_amp": 0,
 
+    "ln": 0, # s2lpllm
+    "task_name": "long_term_forecast",
+    "patch_size": 16,
+    "stride": 8,
+    "pretrained": 1,
+    "pool_size": 1000,
+    "prompt_length": 8,
+    "trend_length": 96,
+    "seasonal_length": 24,
+    "prompt_init": 'text_prototype',
+
+    "d_ff": 32, #timellm
+    "llm_dim": 768,
     "patch_len": 16,
+    "llm_model": "GPT2",
+    "prompt_domain": 1,
     "n_heads": 8,
     "enc_in": 7,
+    "llm_layers": 12,
+    "content": "",
+
     "pretrain": 1,
-    "max_token_num": 17,
+    "max_token_num": 17, # unitime
     "mask_rate": 0.5,
     "max_backcast_len": 96,
     "max_forecast_len": 0,
@@ -77,8 +96,8 @@ DEFAULT_LLM_BASED_HYPER_PARAMS = {
     "dec_trans_layer_num": 2, 
     "ts_embed_dropout": 0.3,
     "dec_head_dropout": 0.1,
-
     "anomaly_ratio": [0.1, 0.5, 1.0, 2, 3, 5.0, 10.0, 15, 20, 25],
+
 
 }
 
