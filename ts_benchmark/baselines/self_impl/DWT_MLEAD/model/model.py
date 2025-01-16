@@ -1,5 +1,5 @@
 import warnings
-from typing import Callable, List, NamedTuple, Optional, Any
+from typing import Callable, List, NamedTuple, Optional
 
 import numpy as np
 import pywt as wt
@@ -114,8 +114,6 @@ class DWT_MLEAD_model():
         for i, window in enumerate(x_view):
             p[i] = e_cov_est.score(window.reshape(1, -1))
 
-        print(f"Gaussion Distribution for level {level}:")
-        print(f"Shapes: mean={e_cov_est.location_.shape}, covariance={e_cov_est.covariance_.shape}, p={p.shape}")
         return p
 
     def _mark_anomalous_windows(self, p: np.ndarray):
@@ -158,79 +156,4 @@ class DWT_MLEAD_model():
                 cluster_score = point_anomaly_scores[cluster_points].sum()
                 if cluster_score > anomaly_counter_threshold:
                     anomaly_clusters.append(AnomalyCluster(cluster_center, cluster_score, cluster_points))
-                else:
-                    print(f"Cluster {i} with center {cluster_center} is not anomalous.")
         return anomaly_clusters
-
-    def plot(self, point_anomaly_scores: Optional[np.ndarray] = None,
-             anomaly_clusters: Optional[List[AnomalyCluster]] = None,
-             coefs: bool = False) -> Any:
-        import pandas as pd
-        import matplotlib.pyplot as plt
-
-        print("\n=== Plotting results ===")
-        print("Collecting data")
-        df = pd.DataFrame(self.data[:self.n], columns=["data"])
-        if coefs:
-            if (self.coefs_levels_ is None or self.coefs_approx_ is None
-                    or self.coefs_detail_ is None or self.coefs_scores_ is None):
-                import sys
-                print(f"Cannot plot coefs, because they were not tracked! "
-                      f"Use `track_coefs=True` to enable plotting coefs.", file=sys.stderr)
-            else:
-                for i, d, a, s in zip(self.coefs_levels_, self.coefs_detail_, self.coefs_approx_, self.coefs_scores_):
-                    df[f"DetailCoef Level {i}"] = d.repeat(self.m // len(d), axis=0)[:self.n]
-                    df[f"ApproxCoef Level {i}"] = a.repeat(self.m // len(a), axis=0)[:self.n]
-                    df[f"Coef Score Level {i}"] = s.repeat(self.m // len(s), axis=0)[:self.n]
-
-        if point_anomaly_scores is not None:
-            df["Point Anomaly Score"] = point_anomaly_scores
-
-        if anomaly_clusters is not None:
-            df["Cluster"] = -1
-            df["Cluster Anomaly Score"] = np.nan
-            for i, cluster in enumerate(anomaly_clusters):
-                df.loc[cluster.points, "Cluster"] = i
-                df.loc[cluster.points, "Cluster Anomaly Score"] = cluster.score
-
-        n_plots = 1 + \
-                  (len(self.coefs_levels_) if coefs and self.coefs_levels_ is not None else 0) + \
-                  (1 if point_anomaly_scores is not None or anomaly_clusters is not None else 0)
-        print(f"Creating {n_plots} subplots")
-        fig, axs = plt.subplots(nrows=n_plots, ncols=1, sharex=True)
-
-        # plot original data
-        print("Plotting original data")
-        axs[0].plot(df["data"], label="Original series")
-        axs[0].legend()
-
-        # plot coefficients
-        if coefs and self.coefs_levels_ is not None:
-            print("Plotting DWT coefficients and their anomaly scores")
-            for i in self.coefs_levels_:
-                for column in [f"DetailCoef Level {i}", f"ApproxCoef Level {i}"]:
-                    axs[i - self.start_level + 1].plot(df[column], label=column)
-                scale = np.max([df[f"DetailCoef Level {i}"], df[f"ApproxCoef Level {i}"]]) / np.max(
-                    df[f"Coef Score Level {i}"])
-                axs[i - self.start_level + 1].plot(df[f"Coef Score Level {i}"] * scale, label=f"Coef Score Level {i}")
-                axs[i - self.start_level + 1].legend()
-
-        # plot point scores
-        if point_anomaly_scores is not None:
-            print("Plotting point anomaly scores")
-            axs[-1].plot(df["Point Anomaly Score"], label="Point Anomaly Score")
-
-        # plot cluster scores
-        if anomaly_clusters is not None:
-            print("Plotting anomaly clusters")
-            classes = df["Cluster"].unique()
-            for i in classes:
-                if i != -1:
-                    index = df[df["Cluster"] == i].index.values
-                    axs[-1].scatter(x=index, y=[1 for x in index], label=f"cluster {i}")
-
-        if point_anomaly_scores is not None or anomaly_clusters is not None:
-            axs[-1].legend()
-
-        plt.show()
-        return df
