@@ -9,6 +9,7 @@ __all__ = [
     "TranAD",
     "MatrixProfile",
     "LeftSTAMPi",
+    "KMeans"
 ]
 
 
@@ -23,4 +24,5 @@ from ts_benchmark.baselines.self_impl.TFAD.TFAD import TFAD
 from ts_benchmark.baselines.self_impl.MatrixProfile.MatrixProfile import MatrixProfile
 from ts_benchmark.baselines.self_impl.TranAD.TranAD import TranAD
 from ts_benchmark.baselines.self_impl.LeftSTAMPi.LeftSTAMPi import LeftSTAMPi
+from ts_benchmark.baselines.self_impl.KMeans.KMeans import KMeans
 
