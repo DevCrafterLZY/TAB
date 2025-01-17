@@ -11,9 +11,8 @@ __all__ = [
     "LeftSTAMPi",
     "KMeans",
     "DWT_MLEAD",
+    "SAND",
 ]
-
-
 
 from ts_benchmark.baselines.self_impl.LOF.lof import LOF
 from ts_benchmark.baselines.self_impl.VAR.VAR import VAR_model
@@ -27,4 +26,4 @@ from ts_benchmark.baselines.self_impl.TranAD.TranAD import TranAD
 from ts_benchmark.baselines.self_impl.LeftSTAMPi.LeftSTAMPi import LeftSTAMPi
 from ts_benchmark.baselines.self_impl.KMeans.KMeans import KMeans
 from ts_benchmark.baselines.self_impl.DWT_MLEAD.DWTMLEAD import DWT_MLEAD
-
+from ts_benchmark.baselines.self_impl.SAND.SAND import SAND
