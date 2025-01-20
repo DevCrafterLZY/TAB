@@ -206,7 +206,7 @@ class PatchAttention(nn.Module):
         attn_dropout = 0.2
         ff_mult = 4
         ff_dropout = 0.2
-        hop = 4
+        hop = 5
         reduction = 'mean'
         use_RN = False
         flash_attn = True

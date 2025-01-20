@@ -28,6 +28,6 @@ def normalize(x, method='softmax'):
         x = F.softmax(x, dim=1)
     else:
         raise ValueError('Unknown normalization method')
-    if c == 1:
-        x = x.squeeze(dim=-1)
+    # if c == 1:
+    #     x = x.squeeze(dim=-1)
     return x

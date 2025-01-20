@@ -23,7 +23,7 @@ accelerator = Accelerator()
 DEFAULT_CONTRA_AD_BASED_HYPER_PARAMS = {
     "n_window": 100,
     "lr": 0.0001,
-    "num_epochs": 3,
+    "num_epochs": 5,
     "batch_size": 128,
     "patience": 3,
     "lradj": "type1",
