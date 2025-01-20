@@ -14,6 +14,7 @@ __all__ = [
     "SAND",
     "Torsk",
     "EIF",
+    "ContraAD",
 ]
 
 from ts_benchmark.baselines.self_impl.LOF.lof import LOF
@@ -31,3 +32,4 @@ from ts_benchmark.baselines.self_impl.DWT_MLEAD.DWTMLEAD import DWT_MLEAD
 from ts_benchmark.baselines.self_impl.SAND.SAND import SAND
 from ts_benchmark.baselines.self_impl.torsk.torsk import Torsk
 from ts_benchmark.baselines.self_impl.eif.eif import EIF
+from ts_benchmark.baselines.self_impl.ContraAD.ContraAD import ContraAD
