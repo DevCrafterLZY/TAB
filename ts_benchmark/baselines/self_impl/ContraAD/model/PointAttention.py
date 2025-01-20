@@ -1,23 +1,15 @@
-import torch
-from torch import nn
-import torch.nn.functional as F
-from einops import repeat, rearrange, reduce
-from einops.layers.torch import Rearrange, Reduce
-from .attend import Attend
-from torch.nn import Module, ModuleList
-import torch
-from torch import nn, einsum, Tensor
-from torch.nn import Module, ModuleList
-import torch.nn.functional as F
+from typing import Optional
 
-from typing import Optional, Union, Tuple
-
+import torch
+import torch.nn.functional as F
 from einops import rearrange, reduce, repeat, pack, unpack
 from einops.layers.torch import Rearrange
+from rotary_embedding_torch import RotaryEmbedding
+from torch import nn
+from torch.nn import Module, ModuleList
 
 from .RevIN import RevIN
-
-from rotary_embedding_torch import RotaryEmbedding
+from .attend import Attend
 
 
 def normalize(x, method='z-score'):

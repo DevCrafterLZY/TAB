@@ -2,10 +2,11 @@ import numpy as np
 import pandas as pd
 import torch
 import torch.nn as nn
+import torch.nn.functional as F
 from accelerate import Accelerator
 from sklearn.preprocessing import StandardScaler
 from torch import optim
-import torch.nn.functional as F
+
 from ts_benchmark.baselines.self_impl.ContraAD.model.PointAttention import PointHingeLoss, PatchAttention, cal_metric
 from ts_benchmark.baselines.self_impl.ContraAD.utils.utils import normalize
 from ts_benchmark.baselines.time_series_library.utils.tools import (
@@ -16,7 +17,6 @@ from ts_benchmark.baselines.utils import (
     train_val_split,
     anomaly_detection_data_provider,
 )
-from accelerate import Accelerator
 
 accelerator = Accelerator()
 
