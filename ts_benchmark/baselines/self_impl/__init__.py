@@ -33,3 +33,4 @@ from ts_benchmark.baselines.self_impl.SAND.SAND import SAND
 from ts_benchmark.baselines.self_impl.torsk.torsk import Torsk
 from ts_benchmark.baselines.self_impl.eif.eif import EIF
 from ts_benchmark.baselines.self_impl.ContraAD.ContraAD import ContraAD
+from ts_benchmark.baselines.self_impl.Series2Graph.Series2Graph import Series2Graph

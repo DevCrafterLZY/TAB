@@ -50,7 +50,7 @@ class DWT_MLEAD:
         :param X: The data of the score to be calculated.
         :return: Anomaly score array.
         """
-        test_data = test.values.squeeze()
+        test_data = test.values.astype(np.float64).squeeze()
         test_energy = DWT_MLEAD_model(test_data, self.config.start_level, self.config.quantile_epsilon).detect()
 
         return test_energy, test_energy
@@ -62,7 +62,7 @@ class DWT_MLEAD:
         :param X: The data to be tested.
         :return: Anomaly label array.
         """
-        test_data = test.values.squeeze()
+        test_data = test.values.astype(np.float64).squeeze()
         test_energy = DWT_MLEAD_model(test_data, self.config.start_level, self.config.quantile_epsilon).detect()
 
         preds = {}

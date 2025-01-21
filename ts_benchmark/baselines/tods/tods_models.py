@@ -38,6 +38,15 @@ from ts_benchmark.baselines.tods.third_party.tods.sk_interface.detection_algorit
 from ts_benchmark.baselines.tods.third_party.tods.sk_interface.detection_algorithm.PCAODetector_skinterface import (
     PCAODetectorSKI,
 )
+from ts_benchmark.baselines.tods.third_party.tods.sk_interface.detection_algorithm.COF_skinterface import (
+    COFSKI,
+)
+from ts_benchmark.baselines.tods.third_party.tods.sk_interface.detection_algorithm.CBLOF_skinterface import (
+    CBLOFSKI,
+)
+
+
+
 
 TODS_MODELS = [
     [IsolationForestSKI, {}],
@@ -49,6 +58,9 @@ TODS_MODELS = [
     [HBOSSKI, {}],
     [LODASKI, {}],
     [PCAODetectorSKI, {}],
+
+    [COFSKI, {}],
+    [CBLOFSKI, {}],
 ]
 
 

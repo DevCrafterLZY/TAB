@@ -49,7 +49,7 @@ PREDEFINED_DATASETS = {
         size_value=["user"], datasrc_class=LocalStForecastingDataSource
     ),
     "large_detect": DatasetInfo(
-        size_value=["large", "small"],
+        size_value=["large"],
         datasrc_class=LocalAnomalyDetectDataSource,
     ),
     "small_detect": DatasetInfo(
@@ -58,6 +58,17 @@ PREDEFINED_DATASETS = {
     "user_detect": DatasetInfo(
         size_value=["user"], datasrc_class=LocalAnomalyDetectDataSource
     ),
+
+    "new_mult_detect": DatasetInfo(
+        size_value=["mult_new"], datasrc_class=LocalAnomalyDetectDataSource
+    ),
+    "old_mult_detect": DatasetInfo(
+        size_value=["mult_old"], datasrc_class=LocalAnomalyDetectDataSource
+    ),
+    "mult_detect": DatasetInfo(
+        size_value=["mult_new", "mult_old"], datasrc_class=LocalAnomalyDetectDataSource
+    ),
+
 }
 
 
@@ -162,28 +173,17 @@ def pipeline(
     # modeling
     model_factory_list = get_models(model_config)
 
-    result_list = [
-        eval_model(model_factory, data_name_list, evaluation_config)
-        for model_factory in model_factory_list
-    ]
-    model_save_names = [
-        it.split(".")[-1]
-        for it in _get_model_names(
-            [model_factory.model_name for model_factory in model_factory_list]
-        )
-    ]
-
     log_file_names = []
-    for model_factory, result_itr, model_save_name in zip(
-        model_factory_list, result_list, model_save_names
-    ):
-        for i, result_df in enumerate(result_itr.collect()):
-            log_file_names.append(
-                save_log(
-                    result_df,
-                    save_path,
-                    model_save_name if i == 0 else f"{model_save_name}-{i}",
+    for i, model_factory in enumerate(model_factory_list):
+        model_save_name = model_factory.model_name.split(".")[-1]
+        for results in eval_model(model_factory, data_name_list, evaluation_config):
+            for result_df in results.collect():
+                log_file_names.append(
+                    save_log(
+                        result_df,
+                        save_path,
+                        model_save_name if i == 0 else f"{model_save_name}-{i}",
+                    )
                 )
-            )
 
     return log_file_names
