@@ -99,3 +99,6 @@ An Anomaly Detection Approach Based on Isolation Forest Algorithm for Streaming 
 Deep Generative model with Hierarchical Latent Factors for Time Series Anomaly Detection,4,3
 Outlier Detection for Multidimensional Time Series using Deep Neural Networks,1,1
 Outlier Detection for Streaming Task Assignment in Crowdsourcing,2,1
+TimeEval: A benchmarking toolkit for time series anomaly detection algorithms.,14,9
+The Elephant in the Room: Towards A Reliable Time-Series Anomaly Detection Benchmark.,17,9
+An experimental evaluation of anomaly detection in time series.,9,6
