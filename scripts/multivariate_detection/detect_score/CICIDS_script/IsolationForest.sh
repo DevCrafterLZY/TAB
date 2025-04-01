@@ -1,1 +1,0 @@
-python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_multi_config.json" --data-name-list "CICIDS.csv" --model-name "merlion.IsolationForest" --model-hyper-params '{"n_estimators": 6}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "score/IsolationForest"

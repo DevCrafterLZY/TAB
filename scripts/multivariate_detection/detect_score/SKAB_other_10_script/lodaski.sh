@@ -1,1 +1,0 @@
-python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_multi_config.json" --data-name-list "SKAB_other_10.csv" --model-name "tods.lodaski" --model-hyper-params '{}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "score/lodaski"

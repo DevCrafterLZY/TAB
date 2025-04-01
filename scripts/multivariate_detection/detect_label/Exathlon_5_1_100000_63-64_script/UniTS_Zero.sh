@@ -1,1 +1,0 @@
-python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --data-name-list "Exathlon_5_1_100000_63-64.csv" --model-name "pre_train.UniTS" --model-hyper-params '{"seq_len": 96, "target_dim": 19, "anomaly_ratio": 5.0}'  --adapter "PreTrain_adapter"  --gpus 0  --num-workers 1  --timeout 60000  --save-path "label/UniTS_Zero"

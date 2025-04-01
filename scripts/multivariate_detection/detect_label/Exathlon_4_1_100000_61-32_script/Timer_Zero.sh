@@ -1,1 +1,0 @@
-python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --data-name-list "Exathlon_4_1_100000_61-32.csv" --model-name "pre_train.TimerModel" --model-hyper-params '{"seq_len": 672, "anomaly_ratio": 1.0}'  --adapter "PreTrain_adapter"  --gpus 0  --num-workers 1  --timeout 60000  --save-path "label/Timer_Zero"

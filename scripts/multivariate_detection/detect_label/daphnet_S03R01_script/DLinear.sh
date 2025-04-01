@@ -1,1 +1,0 @@
-python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --data-name-list "daphnet_S03R01.csv" --model-name "time_series_library.DLinear" --model-hyper-params '{"batch_size": 32, "horizon": 1, "norm": true, "seq_len": 12, "anomaly_ratio": 20.0}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/DLinear" --adapter "transformer_adapter"

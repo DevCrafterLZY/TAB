@@ -1,1 +1,0 @@
-python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --data-name-list "synthetic_con0.0494.csv" --model-name "pre_train.Moment" --model-hyper-params '{"seq_len": 512, "sampling_rate": 0.05, "anomaly_ratio": 25.0}'  --adapter "PreTrain_adapter"  --gpus 0  --num-workers 1  --timeout 60000  --save-path "label/Moment_Few"

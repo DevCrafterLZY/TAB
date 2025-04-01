@@ -1,1 +1,0 @@
-python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --data-name-list "SKAB_valve1_3.csv" --model-name "pre_train.TinyTimeMixer" --model-hyper-params '{"seq_len": 96, "is_train": 1, "sampling_rate": 1, "anomaly_ratio": 0.5}'  --adapter "PreTrain_adapter"  --gpus 0  --num-workers 1  --timeout 60000  --save-path "label/TinyTimeMixer_Full"

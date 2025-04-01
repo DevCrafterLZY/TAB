@@ -1,1 +1,0 @@
-python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_multi_config.json" --data-name-list "synthetic_sha0.049.csv" --model-name "pre_train.Moment" --model-hyper-params '{"seq_len": 512}'  --adapter "PreTrain_adapter"  --gpus 0  --num-workers 1  --timeout 60000  --save-path "score/Moment_Zero"

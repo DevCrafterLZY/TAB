@@ -1,1 +1,0 @@
-python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --data-name-list "CalIt2.csv" --model-name "pre_train.TinyTimeMixer" --model-hyper-params '{"seq_len": 96, "anomaly_ratio": 15.0}'  --adapter "PreTrain_adapter"  --gpus 0  --num-workers 1  --timeout 60000  --save-path "label/TinyTimeMixer_Zero"
