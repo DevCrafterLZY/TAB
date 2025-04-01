@@ -52,6 +52,26 @@ python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_config.jso
 
 python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_config.json" --data-set-name "large_detect" --model-name "self_impl.DCdetector" --model-hyper-params '{"batch_size": 64, "num_epochs": 3, "patch_size": [3, 5], "win_size": 30, "anomaly_ratio": 20.0}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "single/score/DCdetector"
 
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_config.json" --data-set-name "small_detect" --model-name "self_impl.Torsk" --model-hyper-params '{}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "new_model/score/2_27/Torsk"
+
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_config.json" --data-set-name "small_detect" --model-name "self_impl.SAND" --model-hyper-params '{}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "new_model/score/2_27/SAND"
+
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_config.json" --data-set-name "small_detect" --model-name "tods.cblofski" --model-hyper-params '{}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "new_model/score/2_27/cblofski"
+
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_config.json" --data-set-name "small_detect" --model-name "tods.cofski" --model-hyper-params '{}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "new_model/score/2_27/cofski"
+
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_config.json" --data-set-name "small_detect" --model-name "self_impl.DWT_MLEAD" --model-hyper-params '{}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "new_model/score/2_27/DWT_MLEAD"
+
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_config.json" --data-set-name "small_detect" --model-name "self_impl.EIF" --model-hyper-params '{}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "new_model/score/2_27/EIF"
+
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_config.json" --data-set-name "small_detect" --model-name "self_impl.KMeans" --model-hyper-params '{}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "new_model/score/2_27/KMeans"
+
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_config.json" --data-set-name "small_detect" --model-name "self_impl.LeftSTAMPi" --model-hyper-params '{}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "new_model/score/2_27/LeftSTAMPi"
+
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_config.json" --data-set-name "small_detect" --model-name "self_impl.Series2Graph" --model-hyper-params '{}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "new_model/score/2_27/Series2Graph"
+
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_config.json" --data-set-name "small_detect" --model-name "self_impl.ContraAD" --model-hyper-params '{}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "new_model/score/2_27/ContraAD"
+
 python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_config.json" --data-set-name "large_detect" --model-name "pre_train.UniTS" --model-hyper-params '{"num_epochs": 3, "seq_len": 96, "sampling_rate": 1, "is_train": 1}' --adapter "PreTrain_adapter" --gpus 0  --num-workers 1  --timeout 60000  --save-path "single/score/Units_Full"
 
 python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_config.json" --data-set-name "large_detect" --model-name "pre_train.TinyTimeMixer" --model-hyper-params '{"num_epochs": 3, "seq_len": 96, "sampling_rate": 1, "is_train": 1}' --adapter "PreTrain_adapter" --gpus 0  --num-workers 1  --timeout 60000  --save-path "single/score/TinyTimeMixer_Full"
@@ -63,36 +83,3 @@ python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_config.jso
 python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_config.json" --data-set-name "large_detect" --model-name "LLM.UniTimeModel" --model-hyper-params '{"num_epochs": 3, "seq_len": 96, "sampling_rate": 1, "max_token_num": 17, "stride": 16, "patch_size": 16, "dataset": "UV", "max_backcast_len": 96}' --adapter "llm_adapter" --gpus 0  --num-workers 1  --timeout 60000  --save-path "single/score/UniTimeModel_Full"
 
 python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_config.json" --data-set-name "large_detect" --model-name "LLM.GPT4TSModel" --model-hyper-params '{"num_epochs": 3, "seq_len": 100, "sampling_rate": 1}' --adapter "llm_adapter" --gpus 0  --num-workers 1  --timeout 60000  --save-path "single/score/GPT4TS_Full"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

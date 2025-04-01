@@ -52,6 +52,24 @@ python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_config.jso
 
 python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_config.json" --data-set-name "large_detect" --model-name "self_impl.DCdetector" --model-hyper-params '{"batch_size": 64, "num_epochs": 3, "patch_size": [3, 5], "win_size": 30}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "single/label/DCdetector"
 
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_config.json" --data-set-name "large_detect" --model-name "self_impl.Torsk" --model-hyper-params '{}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "single/label/Torsk"
+
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_config.json" --data-set-name "large_detect" --model-name "self_impl.SAND" --model-hyper-params '{}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "single/label/SAND"
+
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_config.json" --data-set-name "large_detect" --model-name "tods.cblofski" --model-hyper-params '{}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "single/label/cblofski"
+
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_config.json" --data-set-name "large_detect" --model-name "self_impl.DWT_MLEAD" --model-hyper-params '{}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "single/label/DWT_MLEAD"
+
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_config.json" --data-set-name "large_detect" --model-name "self_impl.EIF" --model-hyper-params '{}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "single/label/EIF"
+
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_config.json" --data-set-name "large_detect" --model-name "self_impl.KMeans" --model-hyper-params '{}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "single/label/KMeans"
+
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_config.json" --data-set-name "large_detect" --model-name "self_impl.LeftSTAMPi" --model-hyper-params '{}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "single/label/LeftSTAMPi"
+
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_config.json" --data-set-name "large_detect" --model-name "self_impl.Series2Graph" --model-hyper-params '{}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "single/label/Series2Graph"
+
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_config.json" --data-set-name "large_detect" --model-name "self_impl.ContraAD" --model-hyper-params '{}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "single/label/ContraAD"
+
 python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_config.json" --data-set-name "large_detect" --model-name "pre_train.UniTS" --model-hyper-params '{"num_epochs": 3, "seq_len": 96, "sampling_rate": 1, "is_train": 1}' --adapter "PreTrain_adapter" --gpus 0  --num-workers 1  --timeout 60000  --save-path "single/label/Units_Full"
 
 python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_config.json" --data-set-name "large_detect" --model-name "pre_train.TinyTimeMixer" --model-hyper-params '{"num_epochs": 3, "seq_len": 96, "sampling_rate": 1, "is_train": 1}' --adapter "PreTrain_adapter" --gpus 0  --num-workers 1  --timeout 60000  --save-path "single/label/TinyTimeMixer_Full"

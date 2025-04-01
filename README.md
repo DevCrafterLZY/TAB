@@ -1,5 +1,21 @@
 # TAB: Unified Benchmarking of Time Series Anomaly Detection Methods
 
+
+
+## Table of Contents
+
+1. [Introduction](#introduction)
+
+1. [Quickstart](#Quickstart)
+
+1. [Time series characteristics](#Time-series-characteristics)
+
+1. [Full results](#Full-results)
+
+   
+
+
+
 ## Introduction
 
 TAB is an open-source library designed for time series anomaly detection researchers.
@@ -9,15 +25,20 @@ We provide a clean codebase for end-to-end evaluation of time series anomaly det
 The below figure provides a visual overview of TAB's pipeline.
 
 <div align="center">
-    <img src="docs/TAB_pipeline.png" alt="TAB_pipeline"  width="75%" />
+    <img src="docs/TAB_pipeline.png" alt="TAB_pipeline"  width="70%" />
 </div>
+
 
 
 The table below provides a visual overview of how TAB's key features compare to other libraries for time series anomaly detection.
 
 <div align="center">
-    <img src="docs/feature.png" alt="TAB_pipeline"  width="80%" />
+    <img src="docs/feature.png" alt="TAB_pipeline"  width="100%" />
 </div>
+
+
+
+
 
 ## Quickstart
 
@@ -64,7 +85,21 @@ We provide the experiment scripts for all benchmarks under the folder `./scripts
 sh ./scripts/multivariate_detection/detect_label/MSL_script/ModernTCN.sh
 ```
 
-### Full experimental results
+
+
+## Time series characteristics
+
+We provide [code](./TAB_Characteristics_Extractor.zip) and [pseudocode](./docs/time_series_characteristics.md) for five characteristics used in TAB. 
+
+
+
+
+
+
+
+## Full results
+
 You can get the results from here:
+
 - [Multivariate dataset results](./docs/results/TAB%20multivariate%20dataset%20result.pdf)
 - [Univariate dataset results](./docs/results/TAB%20univariate%20dataset%20result.pdf)
