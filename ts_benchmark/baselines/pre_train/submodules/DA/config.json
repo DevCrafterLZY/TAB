@@ -1,0 +1,28 @@
+{
+  "architectures": [
+    "DADA"
+  ],
+  "auto_map": {
+    "AutoConfig": "configuration_DADA.DADAConfig",
+    "AutoModel": "modeling_DADA.DADA"
+  },
+  "bn_dims": [
+    16,
+    32,
+    64,
+    128,
+    192,
+    256
+  ],
+  "d_model": 256,
+  "depth": 10,
+  "hidden_dim": 64,
+  "k": 3,
+  "mask_mode": "c",
+  "max_iters": 100000,
+  "model_type": "DADA",
+  "patch_len": 5,
+  "seq_len": 100,
+  "torch_dtype": "float32",
+  "transformers_version": "4.33.3"
+}
