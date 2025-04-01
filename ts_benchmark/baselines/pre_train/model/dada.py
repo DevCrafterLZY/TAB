@@ -5,8 +5,8 @@ from einops import rearrange, repeat
 import sys
 sys.path.insert(0, 'ts_benchmark/baselines/pre_train/submodules/DADA')
 # from ts_benchmark. models import Timer
-from ts_benchmark.baselines.pre_train.submodules.DADA.DADA.modeling_DADA import DADA
-from ts_benchmark.baselines.pre_train.submodules.DADA.DADA.configuration_DADA import DADAConfig
+from ts_benchmark.baselines.pre_train.submodules.Dada.DADA.modeling_DADA import DADA
+from ts_benchmark.baselines.pre_train.submodules.Dada.DADA.configuration_DADA import DADAConfig
 
 from transformers import AutoModel
 
