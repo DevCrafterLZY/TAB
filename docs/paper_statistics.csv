@@ -1,0 +1,104 @@
+paper name,multivariate dataset nums,multivariate dataset domain nums
+Revisiting VAE for Unsupervised Time Series Anomaly Detection: A Frequency Perspective,2,1
+Breaking the Time-Frequency Granularity Discrepancy in Time-Series Anomaly Detection,3,2
+LARA: A Light and Anti-overfitting Retraining Approach for Unsupervised Time Series Anomaly Detection,3,2
+When Model Meets New Normals: Test-Time Adaptation for Unsupervised Time-Series Anomaly Detection,6,4
+MEMTO: Memory-guided Transformer for Multivariate Time Series Anomaly Detection,5,3
+Drift doesn¡¯t Matter: Dynamic Decomposition with Diffusion Reconstruction for Unstable Multivariate Time Series Anomaly Detection,3,2
+Nominality Score Conditioned Time Series Anomaly Detection by Point/Sequential Reconstruction,6,3
+Prototype-oriented unsupervised anomaly detection for multivariate time series,5,3
+Unsupervised Model Selection for Time Series Anomaly Detection,1,1
+DCdetector: Dual Attention Contrastive Representation Learning for Time Series Anomaly Detection,6,4
+Precursor-of-Anomaly Detection for Irregular Time Series,3,2
+Imputation-based Time-Series Anomaly Detection with Conditional Weight-Incremental Diffusion Models,5,3
+Adversarial Autoencoder for Unsupervised Time Series Anomaly Detection and Interpretation,4,3
+Detecting Multivariate Time Series Anomalies with Zero Known Label,5,3
+"DuoGAT: Dual Time-oriented Graph Attention Networks for Accurate, Efficient and Explainable Anomaly Detection on Time-series",5,3
+MadSGM: Multivariate Anomaly Detection with Score-based Generative Models,5,3
+Context-aware Domain Adaptation for Time Series Anomaly Detection,4,3
+Deep Variational Graph Convolutional Recurrent Network for Multivariate Time Series Anomaly Detection,4,3
+Anomaly Transformer: Time Series Anomaly Detection with Association Discrepancy,4,3
+Graph-Augmented Normalizing Flows for Anomaly Detection of Multiple Time Series,3,3
+Anomaly Detection for Tabular Data with Internal Contrastive Learning,1,1
+Local Evaluation of Time Series Anomaly Detection Algorithms,4,4
+Learning Sparse Latent Graph Representations for Anomaly Detection in Multivariate Time Series,3,2
+RCAD: Real-time Collaborative Anomaly Detection System for Mobile Broadband Networks,1,1
+Towards a Rigorous Evaluation of Time-Series Anomaly Detection,5,3
+Neural Contextual Anomaly Detection for Time Series,3,2
+GRELEN: Multivariate Time Series Anomaly Detection from the Perspective of Graph Relational Learning,4,2
+Understanding and Mitigating Data Contamination in Deep Anomaly Detection: A Kernel-based Approach,2,1
+A Semi-Supervised VAE Based Active Anomaly Detection Framework in Multivariate Time Series for Online Systems,1,1
+Robust and Explainable Autoencoders for Unsupervised Time Series Outlier Detection,3,3
+Anomaly Detection in Time Series with Robust Variational Quasi-Recurrent Autoencoders,3,3
+MAD-SGCN: Multivariate Anomaly Detection with Self-learning Graph Convolutional Networks,3,1
+TranAD: Deep Transformer Networks for Anomaly Detection in Multivariate Time Series Data,7,5
+TFAD: A Decomposition Time Series Anomaly Detection Architecture with Time-Frequency Analysis,3,2
+Towards an Awareness of Time Series Anomaly Detection Models' Adversarial Vulnerability,3,2
+Robust Time Series Dissimilarity Measure for Outlier Detection and Periodicity Detection,2,1
+Online false discovery rate control for anomaly detection in time series,1,1
+Multivariate Time Series Anomaly Detection and Interpretation using Hierarchical Inter-Metric and Temporal Embedding,4,3
+Practical Approach to Asynchronous Multivariate Time Series Anomaly Detection and Localization,4,3
+Time Series Anomaly Detection for Cyber-physical Systems via Neural System Identification and Bayesian Filtering,3,1
+Graph Neural Network-Based Anomaly Detection in Multivariate Time Series,2,1
+DAEMON: Unsupervised Anomaly Detection and Interpretation for Multivariate Time Series,4,3
+Long Short Term Memory Networks for Anomaly Detection in Time Series,3,3
+A Networked System of Low-Cost Sensors for Earthquake Detection via Deep Learning,1,1
+USAD : UnSupervised Anomaly Detection on Multivariate Time Series,3,2
+Cross-interaction hierarchical attention networks for urban anomaly prediction,1,1
+Deep Spatio-Temporal Multiple Domain Fusion Network for Urban Anomalies Detection,2,2
+Multivariate Time-Series Anomaly Detection via Graph Attention Network,3,2
+Robust Anomaly Detection for Multivariate Time Series through Stochastic Recurrent Neural Network,3,2
+Sequential Anomaly Detection using Inverse Reinforcement Learning,2,1
+Time-Series Anomaly Detection Service at Microsoft,2,2
+A Deep Neural Network for Unsupervised Anomaly Detection and Diagnosis in Multivariate Time Series Data,1,1
+BeatGAN: Anomalous Rhythm Detection using Adversarially Generated Time Series,2,2
+Outlier Detection for Time Series with Recurrent Autoencoder Ensembles,7,1
+Unsupervised Anomaly Detection for Intricate KPIs via Adversarial Training of VAE,1,1
+Deep Autoencoding Gaussian Mixture Model for Unsupervised Anomaly Detection,1,1
+Detecting Spacecraft Anomalies Using LSTMs and Nonparametric Dynamic Thresholding,2,1
+Unsupervised Anomaly Detection via Variational Auto-Encoder for Seasonal KPIs in Web Applications,1,1
+LSTM-based encoder-decoder for multi-sensor anomaly detection,3,3
+F-FADE: Frequency Factorization for Anomaly Detection in Edge Streams,5,2
+Sintel: A machine learning framework to extract insights from signals,2,1
+Automated anomaly detection in large sequences,4,4
+Unsupervised Time Series Outlier Detection with Diversity-Driven Convolutional Ensembles--Extended Version,4,3
+Sdfvae: Static and dynamic factorized vae for anomaly detection of multivariate cdn kpis,2,2
+Unsupervised model selection for time-series anomaly detection,1,1
+Exathlon: A benchmark for explainable anomaly detection over time series,1,1
+Revisiting time series outlier detection: Definitions and benchmarks,5,4
+Anomaly detection in time series: a comprehensive evaluation,8,6
+Timeseries anomaly detection using temporal hierarchical one-class network,5,4
+Time series anomaly detection with multiresolution ensemble decoding,2,2
+TimeseAD: Benchmarking deep multivariate time-series anomaly detection,2,2
+Timesnet: Temporal 2d-variation modeling for general time series analysis,3,2
+A Comparative Study on Unsupervised Anomaly Detection for Time Series: Experiments and Analysis,5,4
+Robustness of Autoencoders for Anomaly Detection Under Adversarial Impact,2,1
+A Multimodal Anomaly Detector for Robot-Assisted Feeding Using an LSTM-based Variational Autoencoder,1,1
+TadGAN: Time Series Anomaly Detection Using Generative Adversarial Networks,2,1
+LOF: Identifying Density-Based Local Outliers,3,1
+Histogram-based Outlier Score (HBOS): A fast Unsupervised Anomaly Detection Algorithm,1,1
+"Matrix Profile I: All Pairs Similarity Joins for Time Series: A Unifying View that Includes Motifs, Discords and Shapelets",6,5
+Efficient Algorithms for Mining Outliers from Large Data Sets,2,1
+Evaluating Real-time Anomaly Detection Algorithms ¨C the Numenta Anomaly Benchmark,9,5
+Advancing Multivariate Time Series Anomaly Detection: A Comprehensive Benchmark with Real-World Data from Alibaba,1,1
+MTAD: Tools and Benchmarks for Multivariate Time Series Anomaly Detection,5,3
+Making the End-User a Priority in Benchmarking: OrionBench for Unsupervised Time Series Anomaly Detection,2,1
+MAD-GAN: Multivariate Anomaly Detection for Time Series Data with Generative Adversarial Networks,2,1
+One Fits All: Power General Time Series Analysis by Pretrained LM,5,3
+UNITS: A Unified Multi-Task Time Series Model,5,3
+CADET: Calibrated Anomaly Detection for Mitigating Hardness Bias,2,1
+Practical Approach to Asynchronous Multi-variate Time Series Anomaly Detection and Localization,3,2
+Time Series Change Point Detection with Self-Supervised Contrastive Predictive Coding,2,1
+NTAM: Neighborhood-Temporal Attention Model for Disk Failure Prediction in Cloud Platforms,2,1
+A Decomposition Approach for Urban Anomaly Detection Across Spatiotemporal Data,2,1
+Choose Wisely: An Extensive Evaluation of Model Selection for Anomaly Detection in Time Series,9,5
+Comparing Prediction Methods in Anomaly Detection: An Industrial Evaluation,4,2
+Multivariate Industrial Time Series with Cyber-Attack Simulation: Fault Detection Using an LSTM-based Predictive Data Model,1,1
+Detecting Anomalies in Spacecraft Telemetry Using Evolutionary Thresholding and LSTMs,1,1
+An Anomaly Detection Approach Based on Isolation Forest Algorithm for Streaming Data using Sliding Window,4,3
+Deep Generative model with Hierarchical Latent Factors for Time Series Anomaly Detection,4,3
+Outlier Detection for Multidimensional Time Series using Deep Neural Networks,1,1
+Outlier Detection for Streaming Task Assignment in Crowdsourcing,2,1
+TimeEval: A benchmarking toolkit for time series anomaly detection algorithms.,14,9
+The Elephant in the Room: Towards A Reliable Time-Series Anomaly Detection Benchmark.,17,9
+An experimental evaluation of anomaly detection in time series.,9,6

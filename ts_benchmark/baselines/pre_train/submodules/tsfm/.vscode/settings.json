@@ -1,0 +1,20 @@
+{
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true,
+  },
+  "python.testing.pytestArgs": [
+    "tests"
+  ],
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true,
+  "ruff.format.args": [
+    "--config=./pyproject.toml"
+  ],
+  "ruff.lint.args": [
+    "--config=./pyproject.toml"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.ruff": "always"
+  }
+}
