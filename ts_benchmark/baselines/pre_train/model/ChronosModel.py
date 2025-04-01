@@ -7,7 +7,7 @@
 # We thank the authors for their contributions.
 # ---------------------------------------------------------------------------------
 import sys
-sys.path.insert(0, 'ts_benchmark/baselines/pre_train/submodules/chronos-forecasting/src')
+sys.path.insert(0, 'ts_benchmark/baselines/pre_train/submodules/chronos/src')
 import torch
 from chronos import ChronosBoltPipeline
 from einops import rearrange
