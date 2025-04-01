@@ -10,3 +10,4 @@ python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_config.jso
 
 python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_config.json" --data-set-name "large_detect" --model-name "LLM.GPT4TSModel" --model-hyper-params '{"num_epochs": 3, "seq_len": 100, "sampling_rate": 0.05}' --adapter "llm_adapter" --gpus 0  --num-workers 1  --timeout 60000  --save-path "single/label/GPT4TS_Few"
 
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_config.json" --data-set-name "large_detect" --model-name "LLM.CALFModel" --model-hyper-params '{"d_ff": 768, "d_model": 768, "dropout": 0.3, "gpt_layer": 6, "horizon": 1, "lr": 0.0005, "n_heads": 4, "norm": true, "sampling_rate": 1, "seq_len": 96}' --adapter "llm_adapter" --gpus 0 --num-workers 1 --timeout 60000 --save-path "single/label/CALFModelfull"
