@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --data-name-list "131_OPPORTUNITY_id_3_HumanActivity_tr_7016_1st_26691.csv" --model-name "self_impl.Torsk" --model-hyper-params '{"anomaly_ratio": 0.1}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/Torsk"

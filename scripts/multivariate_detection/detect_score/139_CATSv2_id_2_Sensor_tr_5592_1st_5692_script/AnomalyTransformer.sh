@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_multi_config.json" --data-name-list "139_CATSv2_id_2_Sensor_tr_5592_1st_5692.csv" --model-name "self_impl.AnomalyTransformer" --model-hyper-params '{"batch_size": 64, "lr": 0.001, "num_epochs": 3, "win_size": 50}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "score/AnomalyTransformer"

@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --data-name-list "SMAP.csv" --model-name "self_impl.DCdetector" --model-hyper-params '{"batch_size": 128, "lr": 0.001, "num_epochs": 3, "win_size": 80, "anomaly_ratio": 0.5}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/DCdetector"

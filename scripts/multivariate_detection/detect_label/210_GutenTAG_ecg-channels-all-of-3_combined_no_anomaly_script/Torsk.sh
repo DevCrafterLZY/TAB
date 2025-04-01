@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --data-name-list "210_GutenTAG_ecg-channels-all-of-3_combined_no_anomaly.csv" --model-name "self_impl.Torsk" --model-hyper-params '{"anomaly_ratio": 3.0}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/Torsk"

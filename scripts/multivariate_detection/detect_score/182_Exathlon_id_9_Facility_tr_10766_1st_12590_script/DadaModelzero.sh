@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_multi_config.json" --data-name-list "182_Exathlon_id_9_Facility_tr_10766_1st_12590.csv" --model-name "pre_train.DadaModel" --model-hyper-params '{"horizon": 1, "norm": true, "seq_len": 100}' --adapter "PreTrain_adapter" --gpus 0 --num-workers 1 --timeout 60000 --save-path "score/DadaModelzero"

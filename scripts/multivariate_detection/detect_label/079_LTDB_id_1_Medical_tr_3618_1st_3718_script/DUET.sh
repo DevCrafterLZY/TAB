@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --data-name-list "079_LTDB_id_1_Medical_tr_3618_1st_3718.csv" --model-name "duet.DUET" --model-hyper-params '{"batch_size": 256, "horizon": 1, "lr": 0.0001, "norm": true, "num_epochs": 10, "seq_len": 96, "anomaly_ratio": 10.0}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/DUET"

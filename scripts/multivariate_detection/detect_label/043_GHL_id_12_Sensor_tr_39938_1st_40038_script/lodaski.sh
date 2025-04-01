@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --data-name-list "043_GHL_id_12_Sensor_tr_39938_1st_40038.csv" --model-name "tods.lodaski" --model-hyper-params '{}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/lodaski"

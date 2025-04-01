@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --data-name-list "240_GutenTAG_sinus-channels-all-of-3_combined_no_anomaly.csv" --model-name "self_impl.ContraAD" --model-hyper-params '{"lr": 0.01, "n_window": 192, "anomaly_ratio": 0.1}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/ContraAD"

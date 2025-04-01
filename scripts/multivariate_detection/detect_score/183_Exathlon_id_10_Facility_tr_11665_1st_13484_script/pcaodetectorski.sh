@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_multi_config.json" --data-name-list "183_Exathlon_id_10_Facility_tr_11665_1st_13484.csv" --model-name "tods.pcaodetectorski" --model-hyper-params '{}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "score/pcaodetectorski"

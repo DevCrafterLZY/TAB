@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_multi_config.json" --data-name-list "027_MITDB_id_9_Medical_tr_25000_1st_52255.csv" --model-name "self_impl.AnomalyTransformer" --model-hyper-params '{"batch_size": 64, "e_layers": 1, "lr": 0.001, "num_epochs": 3, "win_size": 96}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "score/AnomalyTransformer"

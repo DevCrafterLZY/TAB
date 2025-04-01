@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --data-name-list "SKAB_valve2_2.csv" --model-name "self_impl.EIF" --model-hyper-params '{"anomaly_ratio": 0.1}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/EIF"

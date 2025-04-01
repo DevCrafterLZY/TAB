@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_multi_config.json" --data-name-list "046_GHL_id_15_Sensor_tr_50000_1st_156462.csv" --model-name "self_impl.KMeans" --model-hyper-params '{}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "score/KMeans"

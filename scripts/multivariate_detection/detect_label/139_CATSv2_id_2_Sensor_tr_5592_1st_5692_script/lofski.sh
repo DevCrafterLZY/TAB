@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --data-name-list "139_CATSv2_id_2_Sensor_tr_5592_1st_5692.csv" --model-name "tods.lofski" --model-hyper-params '{"leaf_size": 10, "n_neighbors": 5}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/lofski"

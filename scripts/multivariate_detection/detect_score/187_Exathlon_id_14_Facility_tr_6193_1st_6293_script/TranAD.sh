@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_multi_config.json" --data-name-list "187_Exathlon_id_14_Facility_tr_6193_1st_6293.csv" --model-name "self_impl.TranAD" --model-hyper-params '{"batch_size": 64, "lr": 0.0001, "n_window": 8, "num_epochs": 5, "patience": 3}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "score/TranAD"

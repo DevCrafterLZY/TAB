@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --data-name-list "232_GutenTAG_rw-channels-single-of-10_combined_no_anomaly.csv" --model-name "self_impl.KMeans" --model-hyper-params '{"anomaly_ratio": 0.1}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/KMeans"

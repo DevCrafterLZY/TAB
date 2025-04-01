@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --data-name-list "daphnet_S03R02.csv" --model-name "merlion.VAE" --model-hyper-params '{}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/VAE"

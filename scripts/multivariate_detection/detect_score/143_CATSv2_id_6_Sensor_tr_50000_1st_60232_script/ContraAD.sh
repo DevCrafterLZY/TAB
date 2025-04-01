@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_multi_config.json" --data-name-list "143_CATSv2_id_6_Sensor_tr_50000_1st_60232.csv" --model-name "self_impl.ContraAD" --model-hyper-params '{"lr": 0.01, "n_window": 96}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "score/ContraAD"

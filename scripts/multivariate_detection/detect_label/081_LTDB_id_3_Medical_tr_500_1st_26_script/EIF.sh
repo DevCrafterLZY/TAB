@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --data-name-list "081_LTDB_id_3_Medical_tr_500_1st_26.csv" --model-name "self_impl.EIF" --model-hyper-params '{"anomaly_ratio": 15.0}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/EIF"

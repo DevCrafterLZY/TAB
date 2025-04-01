@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --data-name-list "023_MITDB_id_5_Medical_tr_25000_1st_36913.csv" --model-name "tods.lofski" --model-hyper-params '{"leaf_size": 30, "n_neighbors": 5}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/lofski"

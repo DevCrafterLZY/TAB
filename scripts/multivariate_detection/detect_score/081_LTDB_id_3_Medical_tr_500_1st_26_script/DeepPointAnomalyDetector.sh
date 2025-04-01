@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_multi_config.json" --data-name-list "081_LTDB_id_3_Medical_tr_500_1st_26.csv" --model-name "merlion.DeepPointAnomalyDetector" --model-hyper-params '{"enable_threshold": 0}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "score/DeepPointAnomalyDetector"

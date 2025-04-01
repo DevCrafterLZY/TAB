@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_multi_config.json" --data-name-list "050_GHL_id_19_Sensor_tr_43750_1st_55001.csv" --model-name "pre_train.DadaModel" --model-hyper-params '{"horizon": 1, "norm": true, "seq_len": 100}' --adapter "PreTrain_adapter" --gpus 0 --num-workers 1 --timeout 60000 --save-path "score/DadaModelzero"

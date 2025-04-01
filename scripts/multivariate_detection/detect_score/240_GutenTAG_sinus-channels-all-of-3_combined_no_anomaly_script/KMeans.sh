@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_multi_config.json" --data-name-list "240_GutenTAG_sinus-channels-all-of-3_combined_no_anomaly.csv" --model-name "self_impl.KMeans" --model-hyper-params '{}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "score/KMeans"

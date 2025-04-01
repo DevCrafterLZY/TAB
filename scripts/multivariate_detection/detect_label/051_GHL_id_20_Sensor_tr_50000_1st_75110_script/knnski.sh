@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --data-name-list "051_GHL_id_20_Sensor_tr_50000_1st_75110.csv" --model-name "tods.knnski" --model-hyper-params '{"leaf_size": 10, "n_neighbors": 10}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/knnski"

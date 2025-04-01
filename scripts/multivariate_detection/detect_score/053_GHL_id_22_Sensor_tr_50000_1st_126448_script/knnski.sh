@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_multi_config.json" --data-name-list "053_GHL_id_22_Sensor_tr_50000_1st_126448.csv" --model-name "tods.knnski" --model-hyper-params '{}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "score/knnski"

@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --data-name-list "Exathlon_4_1_100000_61-32.csv" --model-name "pre_train.TinyTimeMixer" --model-hyper-params '{"horizon": 1, "norm": true, "seq_len": 96, "anomaly_ratio": 5.0}' --adapter "PreTrain_adapter" --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/TinyTimeMixerzero"

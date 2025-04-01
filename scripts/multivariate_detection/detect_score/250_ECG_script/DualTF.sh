@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_multi_config.json" --data-name-list "250_ECG.csv" --model-name "self_impl.DualTF" --model-hyper-params '{"anomaly_ratio": 25.0, "batch_size": 6, "fre_anomaly_ratio": 27, "num_epochs": 3, "seq_len": 100}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "score/DualTF"

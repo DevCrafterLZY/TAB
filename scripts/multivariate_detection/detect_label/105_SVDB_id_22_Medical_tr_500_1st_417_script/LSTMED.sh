@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --data-name-list "105_SVDB_id_22_Medical_tr_500_1st_417.csv" --model-name "merlion.LSTMED" --model-hyper-params '{}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/LSTMED"

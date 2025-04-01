@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --data-name-list "SMAP.csv" --model-name "self_impl.AnomalyTransformer" --model-hyper-params '{"e_layers": 4, "lr": 0.0001, "num_epochs": 3, "anomaly_ratio": 3.0}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/AnomalyTransformer"

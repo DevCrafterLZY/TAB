@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --data-name-list "019_MITDB_id_1_Medical_tr_37500_1st_103211.csv" --model-name "self_impl.ContraAD" --model-hyper-params '{"lr": 0.01, "n_window": 192, "anomaly_ratio": 0.5}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/ContraAD"

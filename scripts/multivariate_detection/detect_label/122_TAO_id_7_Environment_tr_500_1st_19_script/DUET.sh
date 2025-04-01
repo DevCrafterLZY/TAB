@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --data-name-list "122_TAO_id_7_Environment_tr_500_1st_19.csv" --model-name "duet.DUET" --model-hyper-params '{"batch_size": 256, "horizon": 1, "lr": 0.0001, "norm": true, "num_epochs": 10, "seq_len": 96, "anomaly_ratio": 10.0}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/DUET"

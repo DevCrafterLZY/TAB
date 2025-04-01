@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_multi_config.json" --data-name-list "Exathlon_4_1_100000_61-32.csv" --model-name "self_impl.ContraAD" --model-hyper-params '{"n_window": 75}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "score/ContraAD"

@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --data-name-list "180_Exathlon_id_7_Facility_tr_10766_1st_12590.csv" --model-name "tods.lofski" --model-hyper-params '{}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/lofski"

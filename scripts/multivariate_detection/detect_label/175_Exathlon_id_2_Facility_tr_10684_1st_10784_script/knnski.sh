@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --data-name-list "175_Exathlon_id_2_Facility_tr_10684_1st_10784.csv" --model-name "tods.knnski" --model-hyper-params '{"leaf_size": 10, "n_neighbors": 20}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/knnski"

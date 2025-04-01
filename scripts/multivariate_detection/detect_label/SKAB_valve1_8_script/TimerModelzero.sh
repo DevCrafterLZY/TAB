@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --data-name-list "SKAB_valve1_8.csv" --model-name "pre_train.TimerModel" --model-hyper-params '{"horizon": 1, "norm": true, "seq_len": 672, "anomaly_ratio": 3.0}' --adapter "PreTrain_adapter" --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/TimerModelzero"

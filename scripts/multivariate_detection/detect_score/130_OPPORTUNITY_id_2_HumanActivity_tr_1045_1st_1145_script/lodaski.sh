@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_multi_config.json" --data-name-list "130_OPPORTUNITY_id_2_HumanActivity_tr_1045_1st_1145.csv" --model-name "tods.lodaski" --model-hyper-params '{}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "score/lodaski"

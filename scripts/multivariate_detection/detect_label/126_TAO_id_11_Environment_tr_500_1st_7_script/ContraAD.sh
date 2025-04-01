@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --data-name-list "126_TAO_id_11_Environment_tr_500_1st_7.csv" --model-name "self_impl.ContraAD" --model-hyper-params '{"anomaly_ratio": 5.0}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/ContraAD"

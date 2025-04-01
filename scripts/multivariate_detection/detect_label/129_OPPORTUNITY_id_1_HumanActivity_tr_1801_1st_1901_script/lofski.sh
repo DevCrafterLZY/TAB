@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --data-name-list "129_OPPORTUNITY_id_1_HumanActivity_tr_1801_1st_1901.csv" --model-name "tods.lofski" --model-hyper-params '{"leaf_size": 10, "n_neighbors": 10}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/lofski"

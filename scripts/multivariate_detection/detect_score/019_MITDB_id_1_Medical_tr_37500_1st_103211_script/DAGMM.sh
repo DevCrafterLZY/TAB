@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_multi_config.json" --data-name-list "019_MITDB_id_1_Medical_tr_37500_1st_103211.csv" --model-name "merlion.DAGMM" --model-hyper-params '{}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "score/DAGMM"

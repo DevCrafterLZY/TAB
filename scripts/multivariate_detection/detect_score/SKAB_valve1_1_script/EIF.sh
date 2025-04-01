@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_multi_config.json" --data-name-list "SKAB_valve1_1.csv" --model-name "self_impl.EIF" --model-hyper-params '{}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "score/EIF"

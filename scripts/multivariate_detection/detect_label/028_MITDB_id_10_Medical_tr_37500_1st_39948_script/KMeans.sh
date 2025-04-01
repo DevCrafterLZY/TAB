@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --data-name-list "028_MITDB_id_10_Medical_tr_37500_1st_39948.csv" --model-name "self_impl.KMeans" --model-hyper-params '{"anomaly_ratio": 0.1}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/KMeans"

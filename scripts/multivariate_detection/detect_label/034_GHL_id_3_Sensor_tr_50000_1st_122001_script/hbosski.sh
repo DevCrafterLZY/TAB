@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --data-name-list "034_GHL_id_3_Sensor_tr_50000_1st_122001.csv" --model-name "tods.hbosski" --model-hyper-params '{}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/hbosski"

@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --data-name-list "136_OPPORTUNITY_id_8_HumanActivity_tr_1495_1st_1595.csv" --model-name "self_impl.ContraAD" --model-hyper-params '{"lr": 0.01, "n_window": 192, "anomaly_ratio": 0.1}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/ContraAD"

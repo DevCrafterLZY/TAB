@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_multi_config.json" --data-name-list "114_SVDB_id_31_Medical_tr_25000_1st_63090.csv" --model-name "duet.DUET" --model-hyper-params '{"batch_size": 256, "horizon": 1, "lr": 0.0001, "norm": true, "num_epochs": 10, "seq_len": 192}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "score/DUET"

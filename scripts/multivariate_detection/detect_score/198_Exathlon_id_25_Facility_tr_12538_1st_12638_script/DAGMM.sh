@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_multi_config.json" --data-name-list "198_Exathlon_id_25_Facility_tr_12538_1st_12638.csv" --model-name "merlion.DAGMM" --model-hyper-params '{}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "score/DAGMM"

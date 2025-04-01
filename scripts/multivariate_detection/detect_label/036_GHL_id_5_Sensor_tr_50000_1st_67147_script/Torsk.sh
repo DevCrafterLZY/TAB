@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --data-name-list "036_GHL_id_5_Sensor_tr_50000_1st_67147.csv" --model-name "self_impl.Torsk" --model-hyper-params '{"anomaly_ratio": 5.0}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/Torsk"

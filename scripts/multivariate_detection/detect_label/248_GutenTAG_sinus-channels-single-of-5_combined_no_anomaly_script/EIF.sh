@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --data-name-list "248_GutenTAG_sinus-channels-single-of-5_combined_no_anomaly.csv" --model-name "self_impl.EIF" --model-hyper-params '{"anomaly_ratio": 0.1}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/EIF"

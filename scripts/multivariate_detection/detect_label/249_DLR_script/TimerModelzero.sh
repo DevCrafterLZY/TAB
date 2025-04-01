@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --data-name-list "249_DLR.csv" --model-name "pre_train.TimerModel" --model-hyper-params '{"horizon": 1, "is_train": 0, "norm": true, "seq_len": 672, "anomaly_ratio": 0.5}' --adapter "PreTrain_adapter" --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/TimerModelzero"

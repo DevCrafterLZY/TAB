@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_multi_config.json" --data-name-list "082_LTDB_id_4_Medical_tr_4456_1st_4556.csv" --model-name "merlion.IsolationForest" --model-hyper-params '{}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "score/IsolationForest"

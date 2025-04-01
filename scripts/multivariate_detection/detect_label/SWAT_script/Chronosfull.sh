@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --data-name-list "SWAT.csv" --model-name "pre_train.Chronos" --model-hyper-params '{"horizon": 1, "is_train": 1, "norm": true, "sampling_rate": 1, "seq_len": 96, "anomaly_ratio": 10.0}' --adapter "chronos_adapter" --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/Chronosfull"

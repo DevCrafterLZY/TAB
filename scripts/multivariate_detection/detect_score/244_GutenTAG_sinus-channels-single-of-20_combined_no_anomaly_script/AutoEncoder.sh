@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_multi_config.json" --data-name-list "244_GutenTAG_sinus-channels-single-of-20_combined_no_anomaly.csv" --model-name "merlion.AutoEncoder" --model-hyper-params '{}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "score/AutoEncoder"

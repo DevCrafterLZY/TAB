@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_multi_config.json" --data-name-list "048_GHL_id_17_Sensor_tr_50000_1st_154001.csv" --model-name "tods.lofski" --model-hyper-params '{}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "score/lofski"

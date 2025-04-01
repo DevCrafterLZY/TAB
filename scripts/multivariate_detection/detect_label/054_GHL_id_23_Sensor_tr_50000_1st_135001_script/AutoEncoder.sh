@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --data-name-list "054_GHL_id_23_Sensor_tr_50000_1st_135001.csv" --model-name "merlion.AutoEncoder" --model-hyper-params '{}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/AutoEncoder"

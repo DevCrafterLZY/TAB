@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_multi_config.json" --data-name-list "083_LTDB_id_5_Medical_tr_15502_1st_15602.csv" --model-name "self_impl.TranAD" --model-hyper-params '{"batch_size": 64, "lr": 0.0001, "n_window": 8, "num_epochs": 5, "patience": 3}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "score/TranAD"

@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --data-name-list "ASD_dataset_5.csv" --model-name "pre_train.UniTS" --model-hyper-params '{"horizon": 1, "norm": true, "seq_len": 96, "target_dim": 19, "anomaly_ratio": 3.0}' --adapter "PreTrain_adapter" --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/UniTSzero"

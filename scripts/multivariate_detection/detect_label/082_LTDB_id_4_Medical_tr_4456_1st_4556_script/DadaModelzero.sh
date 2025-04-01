@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --data-name-list "082_LTDB_id_4_Medical_tr_4456_1st_4556.csv" --model-name "pre_train.DadaModel" --model-hyper-params '{"horizon": 1, "norm": true, "seq_len": 100, "anomaly_ratio": 25.0}' --adapter "PreTrain_adapter" --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/DadaModelzero"

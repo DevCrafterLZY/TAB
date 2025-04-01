@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --data-name-list "048_GHL_id_17_Sensor_tr_50000_1st_154001.csv" --model-name "self_impl.DCdetector" --model-hyper-params '{"batch_size": 128, "num_epochs": 3, "patch_size": [3, 5], "win_size": 105, "anomaly_ratio": 5.0}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/DCdetector"

@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_multi_config.json" --data-name-list "215_GutenTAG_ecg-channels-single-of-2_combined_anomaly.csv" --model-name "self_impl.ContraAD" --model-hyper-params '{"lr": 0.001, "n_window": 192}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "score/ContraAD"

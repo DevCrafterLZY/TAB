@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --data-name-list "040_GHL_id_9_Sensor_tr_50000_1st_92001.csv" --model-name "merlion.DAGMM" --model-hyper-params '{}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/DAGMM"

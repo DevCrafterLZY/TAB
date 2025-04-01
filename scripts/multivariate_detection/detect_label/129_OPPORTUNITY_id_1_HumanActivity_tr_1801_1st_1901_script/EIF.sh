@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_multi_config.json" --data-name-list "129_OPPORTUNITY_id_1_HumanActivity_tr_1801_1st_1901.csv" --model-name "self_impl.EIF" --model-hyper-params '{"anomaly_ratio": 0.5}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "label/EIF"

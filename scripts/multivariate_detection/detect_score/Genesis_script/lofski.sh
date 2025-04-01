@@ -1,0 +1,1 @@
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_score_multi_config.json" --data-name-list "Genesis.csv" --model-name "tods.lofski" --model-hyper-params '{"leaf_size": 5, "n_neighbors": 10}' --gpus 0 --num-workers 1 --timeout 60000 --save-path "score/lofski"
