@@ -28,7 +28,7 @@ DEFAULT_PreTrain_BASED_HYPER_PARAMS = {
     "quantiles_num": 20,
     "batch_size": 128,
     "test_batch_size": 1,
-    "num_workers": 8,
+    "num_workers": 0,
     "ckpt_path":"",
     "dataset":"ETTh1",
     'target_dim': 1, 
@@ -161,7 +161,7 @@ class PreTrainAdapter(ModelBase):
         for input, _ in valid_data_loader:
             input = input.to(device)
 
-            output = self.model(input, None, None)
+            output = self.model(input)
 
             # output = output[:, :, :]
             output = output[:, -config.horizon :, :]
@@ -245,7 +245,7 @@ class PreTrainAdapter(ModelBase):
                     optimizer.zero_grad()
                     input = input.float().to(self.device)
 
-                    output = self.model(input, None, None)
+                    output = self.model(input)
 
                     output = output[:, -config.horizon :, :]
                     loss = criterion(output, input)
@@ -287,7 +287,7 @@ class PreTrainAdapter(ModelBase):
         test_labels = []
         for i, (batch_x, batch_y) in enumerate(self.thre_loader):
             batch_x = batch_x.float().to(self.device)
-            outputs = self.model(batch_x, None, None)
+            outputs = self.model(batch_x)
             score = torch.mean(self.anomaly_criterion(batch_x, outputs), dim=-1)
             score = score.detach().cpu().numpy()
             attens_energy.append(score)
@@ -337,7 +337,7 @@ class PreTrainAdapter(ModelBase):
             for i, (batch_x, batch_y) in enumerate(self.train_data_loader):
                 batch_x = batch_x.float().to(self.device)
                 # reconstruction
-                outputs = self.model(batch_x, None, None)
+                outputs = self.model(batch_x)
                 # criterion
                 score = torch.mean(self.anomaly_criterion(batch_x, outputs), dim=-1)
                 score = score.detach().cpu().numpy()
@@ -352,7 +352,7 @@ class PreTrainAdapter(ModelBase):
         for i, (batch_x, batch_y) in enumerate(self.test_data_loader):
             batch_x = batch_x.float().to(self.device)
             # reconstruction
-            outputs = self.model(batch_x, None, None)
+            outputs = self.model(batch_x)
             # criterion
             score = torch.mean(self.anomaly_criterion(batch_x, outputs), dim=-1)
             score = score.detach().cpu().numpy()
@@ -369,7 +369,7 @@ class PreTrainAdapter(ModelBase):
         for i, (batch_x, batch_y) in enumerate(self.thre_loader):
             batch_x = batch_x.float().to(self.device)
             # reconstruction
-            outputs = self.model(batch_x, None, None)
+            outputs = self.model(batch_x)
             score = torch.mean(self.anomaly_criterion(batch_x, outputs), dim=-1) #(6, 672) (B, L) 对变量平均了
             score = score.detach().cpu().numpy()
             attens_energy.append(score) #(批次数量X, B, L)
@@ -385,7 +385,9 @@ class PreTrainAdapter(ModelBase):
             self.config.anomaly_ratio = [self.config.anomaly_ratio]
 
         preds = {}
-        for ratio in self.config.anomaly_ratio:
+        # for ratio in self.config.anomaly_ratio:
+        ratios = [round(x, 2) for x in np.arange(0.1, 25, 0.1).tolist()]
+        for ratio in ratios:
             threshold = np.percentile(combined_energy, 100 - ratio)
             preds[ratio] = (test_energy > threshold).astype(int)
 

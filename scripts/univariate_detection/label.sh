@@ -72,7 +72,7 @@ python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_config.jso
 
 python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_config.json" --data-set-name "large_detect" --model-name "pre_train.UniTS" --model-hyper-params '{"num_epochs": 3, "seq_len": 96, "sampling_rate": 1, "is_train": 1}' --adapter "PreTrain_adapter" --gpus 0  --num-workers 1  --timeout 60000  --save-path "single/label/Units_Full"
 
-python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_config.json" --data-set-name "large_detect" --model-name "pre_train.TinyTimeMixer" --model-hyper-params '{"num_epochs": 3, "seq_len": 96, "sampling_rate": 1, "is_train": 1}' --adapter "PreTrain_adapter" --gpus 0  --num-workers 1  --timeout 60000  --save-path "single/label/TinyTimeMixer_Full"
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_config.json" --data-set-name "large_detect" --model-name "pre_train.TinyTimeMixer" --model-hyper-params '{"num_epochs": 3, "seq_len": 512, "sampling_rate": 1, "is_train": 1}' --adapter "PreTrain_adapter" --gpus 0  --num-workers 1  --timeout 60000  --save-path "single/label/TinyTimeMixer_Full"
 
 python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_config.json" --data-set-name "large_detect" --model-name "pre_train.TimerModel" --model-hyper-params '{"num_epochs": 3, "seq_len": 96, "sampling_rate": 1, "is_train": 1}' --adapter "PreTrain_adapter" --gpus 0  --num-workers 1  --timeout 60000  --save-path "single/label/TimerModel_Full"
 
@@ -81,3 +81,13 @@ python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_config.jso
 python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_config.json" --data-set-name "large_detect" --model-name "LLM.UniTimeModel" --model-hyper-params '{"num_epochs": 3, "seq_len": 96, "sampling_rate": 1, "max_token_num": 17, "stride": 16, "patch_size": 16, "dataset": "UV", "max_backcast_len": 96}' --adapter "llm_adapter" --gpus 0  --num-workers 1  --timeout 60000  --save-path "single/label/UniTimeModel_Full"
 
 python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_config.json" --data-set-name "large_detect" --model-name "LLM.GPT4TSModel" --model-hyper-params '{"num_epochs": 3, "seq_len": 100, "sampling_rate": 1}' --adapter "llm_adapter" --gpus 0  --num-workers 1  --timeout 60000  --save-path "single/label/GPT4TS_Full"
+
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_config.json" --data-set-name "large_detect" --model-name "LLM.CALFModel" --model-hyper-params '{"d_ff": 768, "d_model": 768, "dropout": 0.3, "gpt_layer": 6, "horizon": 1, "lr": 0.0005, "n_heads": 4, "norm": true, "sampling_rate": 1, "seq_len": 96}' --adapter "llm_adapter" --gpus 0 --num-workers 1 --timeout 60000 --save-path "single/label/CALFModel_Full"
+
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_config.json" --data-set-name "large_detect" --model-name "pre_train.Chronos" --model-hyper-params '{"horizon": 1, "is_train": 1, "norm": true, "sampling_rate": 1, "seq_len": 96, "anomaly_ratio": 0.1}' --adapter "chronos_adapter" --gpus 0 --num-workers 1 --timeout 60000 --save-path "single/label/Chronos_Full"
+
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_config.json" --data-set-name "large_detect" --model-name "pre_train.DadaModel" --model-hyper-params '{"horizon": 1, "is_train": 1, "lr": 0.005, "norm": true, "sampling_rate": 1, "seq_len": 100, "anomaly_ratio": 0.1}' --adapter "PreTrain_adapter" --gpus 0 --num-workers 1 --timeout 60000 --save-path "single/label/DadaModel_Full"
+
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_config.json" --data-set-name "large_detect" --model-name "LLM.LLMMixerModel" --model-hyper-params '{"d_model": 32, "horizon": 1, "lr": 0.001, "n_heads": 4, "norm": true, "sampling_rate": 1, "seq_len": 96, "use_norm": 1, "anomaly_ratio": 0.5}' --adapter "llm_adapter" --gpus 0 --num-workers 1 --timeout 60000 --save-path "single/label/LLMMixerModel_Full"
+
+python ./scripts/run_benchmark.py --config-path "unfixed_detect_label_config.json" --data-set-name "large_detect" --model-name "pre_train.TimesFM" --model-hyper-params '{"horizon": 1, "input_patch_len": 32, "is_train": 1, "norm": true, "output_patch_len": 128, "sampling_rate": 1, "seq_len": 96, "anomaly_ratio": 0.1}' --adapter "PreTrain_adapter" --gpus 0 --num-workers 1 --timeout 60000 --save-path "single/label/TimesFM_Full"

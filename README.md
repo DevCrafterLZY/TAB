@@ -69,11 +69,17 @@ You can clear the environment prefix using the following command. Now the enviro
 
 Prepare Data. You can obtain the well pre-processed datasets from [Google Drive](https://drive.google.com/file/d/1vaFzhPpK2ALNLggISawXA9gjNiyd8nRG/view?usp=sharing). Then place the downloaded data under the folder `./dataset`. 
 
-### Checkpoints preparation
-You can download the checkpoints from [Google Drive](https://drive.google.com/file/d/1cPona0MKVls4ZXsDXq6URsb5TePUS48B/view?usp=drive_link). After obtaining the files, follow these steps to organize them:  
 
-1. Move the files from `checkpoints/llm_checkpoints` to the folder `ts_benchmark/baselines/LLM/checkpoints`.
-2. Move the files from `checkpoints/pre_train_checkpoints` to the directory `TAB/ts_benchmark/baselines/pretrain/checkpoints`.  
+
+### Data preparation
+
+Prepare Data. You can obtain the well pre-processed datasets from [Google Drive](https://drive.google.com/file/d/1_aW2AYwXtGk7ArjDjcSazqD0N9zp-zXx/view?usp=sharing). Then place the downloaded data under the folder `./dataset`. 
+
+### Checkpoints preparation
+You can download the checkpoints from [Google Drive](https://drive.google.com/file/d/14VKcv_sIPDJgSgzOxUIN80kAzqXdzhC0/view?usp=sharing). After obtaining the files, follow the steps below to organize them:
+1. For LLM-based models, move the files from `checkpoints/llm_checkpoints` to the folder `ts_benchmark/baselines/LLM/checkpoints`.
+2. For pre-train models (UniTS, Timer and TimesFM), move the files from `checkpoints/pre_train_checkpoints` to the folder `ts_benchmark/baselines/pre_train/checkpoints`. And the other models' checkpoints can be obtained from Huggingface by the code.
+
 
 Ensure the files are placed in the correct directories for proper functionality.
 

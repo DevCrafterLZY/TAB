@@ -26,7 +26,6 @@ class TimerModel(nn.Module):
         self.output_patch_len = 96 # fixed by the pre-trained model
         self.label_len = config.seq_len - 96
 
-        # self.model = torch.jit.load("ts_benchmark/baselines/pre_train/checkpoints/timer/Timer_anomaly_detection.ckpt")
         class TimerConfig:
             def __init__(self):
                 self.task_name = 'anomaly_detection'
@@ -48,14 +47,12 @@ class TimerModel(nn.Module):
                 param.data.uniform_(-0.02, 0.02)
        
      
-    def forward(self, inputs, x_mark_enc=None, x_mark_dec=None):
+    def forward(self, inputs):
             
         B, L, K = inputs.shape
 
         inputs = rearrange(inputs, 'b l k -> b k l')
-        # padding_size = 96 - (L % 96)  # padding_size = 4
-        # padding_patch_layer = nn.ReplicationPad1d((0, padding_size))
-        # inputs = padding_patch_layer(inputs)
+
         inputs = rearrange(inputs, 'b k l -> (b k) l 1')
 
         outputs = self.model.anomaly_detection(inputs)

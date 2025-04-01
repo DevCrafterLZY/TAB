@@ -22,29 +22,15 @@ class Moment(nn.Module):
         self.freq = config.freq
         self.dataset = config.dataset
 
-        # self.no_training = True
-
         self.model = MOMENTPipeline.from_pretrained(
-            "ts_benchmark/baselines/pre_train/checkpoints/Moment_base", 
-            model_kwargs={
-                'task_name': 'reconstruction',
-                'mask_ratio': config.mask_ratio,
-                # 'forecast_horizon': config.pred_len,
-                # 'backcast_horizon': config.seq_len,
-                # 'head_dropout': 0.1,
-                # 'weight_decay': 0,
-                # 'freeze_encoder': True, # Freeze the patch embedding layer
-                # 'freeze_embedder': True, # Freeze the transformer encoder
-                # 'freeze_head': False, # The linear forecasting head must be trained
-            },
+            "AutonLab/MOMENT-1-large", 
+            # "ts_benchmark/baselines/pre_train/checkpoints/Moment-large",
+            model_kwargs={"task_name": "reconstruction"},
         )
         self.model.init()
-        if not config.use_p:
-            for param in self.model.parameters():
-                param.data.uniform_(-0.02, 0.02)
         
 
-    def forward(self, inputs, x_mark_enc=None, x_mark_dec=None):
+    def forward(self, inputs):
         
         B, L, K = inputs.shape
         inputs = rearrange(inputs, 'b l k -> b k l')

@@ -1042,6 +1042,6 @@ class UniTS(nn.Module):
         return args, task_data_config_list
 
 
-    def forward(self, inputs, x_mark_enc=None, x_mark_dec=None): 
+    def forward(self, inputs): 
         point_forecast = self.model.anomaly_detection(inputs, 0) 
         return point_forecast

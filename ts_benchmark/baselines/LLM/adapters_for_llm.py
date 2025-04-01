@@ -33,7 +33,7 @@ DEFAULT_LLM_BASED_HYPER_PARAMS = {
     "freq": "H",
     "batch_size": 64,
     'label_len':96,
-    "num_workers": 8,
+    "num_workers": 0,
     "freq": "h",
     "sampling_rate": 0.05,
     "sampling_strategy": "uniform",
@@ -96,9 +96,32 @@ DEFAULT_LLM_BASED_HYPER_PARAMS = {
     "dec_trans_layer_num": 2, 
     "ts_embed_dropout": 0.3,
     "dec_head_dropout": 0.1,
+
+    "top_k" : 5, #LLMMixer
+    "num_kernels": 6,
+    # "d_model": 16,
+    # "n_heads": 4,
+    "e_layers": 2,
+    "d_layers": 1,
+    "moving_avg": 25,
+    "factor": 1,
+    "distil": 1,
+    "channel_independence": 1,
+    "decomp_method": "moving_avg",
+    "down_sampling_layers": 3,
+    "down_sampling_window": 2,
+    "down_sampling_method": "avg",
+    "use_future_temporal_feature": 0,
+    "llm_path": "ts_benchmark/baselines/LLM/checkpoints/roberta-base",
+    "tokenizer_path": "ts_benchmark/baselines/LLM/checkpoints/roberta-base",
+    "embed": "timeF",
+
+    "r": 8,
+    "lora_alpha": 32,
+    "lora_dropout": 0.1,
+    "word_embedding_path": "ts_benchmark/baselines/LLM/checkpoints/wte_pca_500.pt",
+
     "anomaly_ratio": [0.1, 0.5, 1.0, 2, 3, 5.0, 10.0, 15, 20, 25],
-
-
 }
 
 class LLMConfig:
@@ -484,7 +507,9 @@ class LLMAdapter(ModelBase):
             self.config.anomaly_ratio = [self.config.anomaly_ratio]
 
         preds = {}
-        for ratio in self.config.anomaly_ratio:
+        # for ratio in self.config.anomaly_ratio:
+        ratios = [round(x, 2) for x in np.arange(0.1, 25, 0.1).tolist()]
+        for ratio in ratios:
             threshold = np.percentile(combined_energy, 100 - ratio)
             preds[ratio] = (test_energy > threshold).astype(int)
 
