@@ -79,6 +79,10 @@ class KMeans:
 
         combined_energy = np.concatenate([train_energy, test_energy], axis=0)
         preds = {}
+
+        if not isinstance(self.config.anomaly_ratio, list):
+            self.config.anomaly_ratio = [self.config.anomaly_ratio]
+
         for ratio in self.config.anomaly_ratio:
             threshold = np.percentile(combined_energy, 100 - ratio)
             preds[ratio] = (test_energy > threshold).astype(int)

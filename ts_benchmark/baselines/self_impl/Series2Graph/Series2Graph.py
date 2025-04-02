@@ -77,6 +77,8 @@ class Series2Graph:
         test_energy = s2g.decision_scores_.squeeze()
 
         preds = {}
+        if not isinstance(self.config.anomaly_ratio, list):
+            self.config.anomaly_ratio = [self.config.anomaly_ratio]
         for ratio in self.config.anomaly_ratio:
             threshold = np.percentile(test_energy, 100 - ratio)
             preds[ratio] = (test_energy > threshold).astype(int)
