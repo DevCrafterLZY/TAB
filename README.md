@@ -53,7 +53,7 @@ apt-get install git
 Download the environment from [Google Drive](https://drive.google.com/file/d/1HpvlzGWw1T8cxGR1vT081kzKYGZFpvWK/view?usp=sharing). (This may take some time, please wait patiently.) Then, create a directory my_env (we recommend creating it under `conda/envs/`) and extract the environment into this directory:
 ```shell
 mkdir -p my_env
-tar -xzf tab.tar.gz -C my_env
+tar -xzf TAB.tar.gz -C my_env
 ```
 #### 3. Activate the Environment
 ```shell
@@ -68,12 +68,6 @@ You can clear the environment prefix using the following command. Now the enviro
 ### Data preparation
 
 Prepare Data. You can obtain the well pre-processed datasets from [Google Drive](https://drive.google.com/file/d/1vaFzhPpK2ALNLggISawXA9gjNiyd8nRG/view?usp=sharing). Then place the downloaded data under the folder `./dataset`. 
-
-
-
-### Data preparation
-
-Prepare Data. You can obtain the well pre-processed datasets from [Google Drive](https://drive.google.com/file/d/1_aW2AYwXtGk7ArjDjcSazqD0N9zp-zXx/view?usp=sharing). Then place the downloaded data under the folder `./dataset`. 
 
 ### Checkpoints preparation
 You can download the checkpoints from [Google Drive](https://drive.google.com/file/d/14VKcv_sIPDJgSgzOxUIN80kAzqXdzhC0/view?usp=sharing). After obtaining the files, follow the steps below to organize them:
