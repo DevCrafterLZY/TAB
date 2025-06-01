@@ -507,7 +507,6 @@ class LLMAdapter(ModelBase):
             self.config.anomaly_ratio = [self.config.anomaly_ratio]
 
         preds = {}
-        # for ratio in self.config.anomaly_ratio:
         for ratio in self.config.anomaly_ratio:
             threshold = np.percentile(combined_energy, 100 - ratio)
             preds[ratio] = (test_energy > threshold).astype(int)
