@@ -25,7 +25,7 @@ class DadaModel(nn.Module):
         self.dataset = config.dataset
         self.config = config
 
-        self.model = AutoModel.from_pretrained("/root/CATCH/ts_benchmark/baselines/pre_train/submodules/DADA/DADA", trust_remote_code=True)
+        self.model = AutoModel.from_pretrained("ts_benchmark/baselines/pre_train/submodules/DADA", trust_remote_code=True)
 
      
     def forward(self, inputs):

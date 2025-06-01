@@ -967,8 +967,7 @@ class UniTS(nn.Module):
 
         args, configs_list = self.generate_units_default_args(self.dataset)
         self.model = Model(args, configs_list, pretrain=False)
-        # pretrain_weight_path = "ts_benchmark/baselines/pre_train/checkpoints/units/units_x128_pretrain_checkpoint.pth"
-        # pretrain_weight_path = "ts_benchmark/baselines/pre_train/checkpoints/units/units_x128_pretrain_checkpoint.pth"
+        
         pretrain_weight_path = "ts_benchmark/baselines/pre_train/checkpoints/units/units_x32_pretrain_checkpoint.pth"
 
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
